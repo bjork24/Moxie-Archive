@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>O:</b>
+  <%= @phlog.o_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @phlog.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @phlog.body %>
+</p>
+
+<p>
+  <b>Thumbnail:</b>
+  <%= @phlog.thumbnail %>
+</p>
+
+<p>
+  <b>Photographer:</b>
+  <%= @phlog.photographer %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @phlog.author %>
+</p>
+
+
+<%= link_to 'Edit', edit_phlog_path(@phlog) %> |
+<%= link_to 'Back', phlogs_path %>

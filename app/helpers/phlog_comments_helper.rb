@@ -1,0 +1,2 @@
+module PhlogCommentsHelper
+end

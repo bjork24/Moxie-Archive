@@ -1,0 +1,24 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  author: 
+  body: 
+  phlog: 
+
+two:
+  author: 
+  body: 
+  phlog: 
+
+# == Schema Information
+#
+# Table name: phlog_comments
+#
+#  id         :integer(4)      not null, primary key
+#  author     :string(255)
+#  body       :text
+#  phlog_id   :integer(4)
+#  created_at :datetime
+#  updated_at :datetime
+#
+

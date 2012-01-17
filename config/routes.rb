@@ -1,4 +1,20 @@
 Moxie::Application.routes.draw do
+
+  get "pages/home"
+  get "pages/about"
+
+  resources :guestbooks
+  resources :phlog_comments
+  resources :phlogs
+  resources :categories
+  resources :authors
+  resources :comments
+  resources :posts
+  
+  root :to => "pages#home"
+  
+  match "guestbook" => "guestbooks#index", :as => :guestbook
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
