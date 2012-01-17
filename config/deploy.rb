@@ -11,7 +11,7 @@ set :repository,  "."
 set :deploy_via, :copy
 
 set :user, :deploy
-set :deploy_to, "/var/www/moxie_blog"
+set :deploy_to, "/var/www/moxie"
 set :use_sudo, false
 
 role :web, application
