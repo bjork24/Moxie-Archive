@@ -8,6 +8,6 @@
 @import "variables";
 
 body {
-  @include container(600px);
+  @include container(100%);
   font-family: $sans-serif;
 }

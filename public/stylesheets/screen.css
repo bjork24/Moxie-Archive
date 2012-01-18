@@ -87,6 +87,6 @@ html > body {
 /* line 10, ../../app/stylesheets/screen.scss */
 body {
   margin: 0 auto;
-  width: 600px;
+  width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
