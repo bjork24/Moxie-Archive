@@ -1,0 +1,12 @@
+<ul id="year_nav">
+<% @years.each do |year| %>
+  <li class="year">
+    <h2><%= year %></h2>
+    <ul>
+    <% (1..12).each do |month| %>
+      <li><%= post_month_linker(year,month) %></li>
+    <% end %>
+    </ul>
+  </li>
+<% end %>
+</ul>

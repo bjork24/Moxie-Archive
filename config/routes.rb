@@ -9,7 +9,9 @@ Moxie::Application.routes.draw do
   resources :categories
   resources :authors
   resources :comments
+  
   resources :posts
+  match '/posts/:year/:month' => 'posts#index'
   
   root :to => "pages#home"
   
