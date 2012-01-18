@@ -1,0 +1,19 @@
+$red: #DC0000;
+$container-width: 600px;
+$base-font-size: 16px;
+$base-line-height: 20px;
+$headline-font: 'Paytone One', sans-serif;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+h1,h2,h3,h4,h5,h6 { font-family: $headline-font; text-transform: uppercase; }
+
+@include establish-baseline;
+
+@mixin container($width: $container-width, $center: true) {
+  @if $center == true {
+    margin: 0 auto;
+  } @else {
+    margin: 0;
+  }
+  width: $width;
+}
