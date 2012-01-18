@@ -24,9 +24,6 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
-  task :build_share_links do
-    run "ln -s #{shared_path}/pix #{release_path}/public/pix"
-  end
 end
 
 namespace :custom do

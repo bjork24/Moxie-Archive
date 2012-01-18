@@ -1,9 +1,14 @@
 <h1><%= @post.title %></h1>
 
-<p><%= @post.body %></p>
+<p><%= simple_format(@post.body) %></p>
 
 <p>By <%= link_to @post.author.name, @post.author %></p>
-<p>Categories: <%= @post.categories.collect { |x| link_to x.name, x }.join(", ") %></p>
+<p>Categories:</p>
+<ul>
+<% @post.categories.each do |c| %>
+  <li><%= link_to c.name, c %></li>
+<% end %>
+</ul>
 
 <hr/>
 
@@ -20,3 +25,8 @@
 <% else %>
   <h3>No Comments</h3>
 <% end %>
+
+<div>
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Back', posts_path %>
+</div>
