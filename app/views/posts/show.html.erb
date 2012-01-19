@@ -1,6 +1,6 @@
 <h1><%= @post.title %></h1>
 
-<p><%= simple_format(@post.body) %></p>
+<div><%= simple_format(@post.body.strip) %></div>
 
 <p>By <%= link_to @post.author.name, @post.author %></p>
 <p>Categories:</p>

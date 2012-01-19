@@ -10,6 +10,14 @@
   <%= @category.description %>
 </p>
 
+<p>Posts</p>
+
+<ol>
+<% @category.posts.each do |post| %>
+  <li><%= link_to post.title, post %></li>
+<% end %>
+</ol>
+
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
