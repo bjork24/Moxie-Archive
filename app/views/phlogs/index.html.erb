@@ -1,33 +1,11 @@
 <h1>Listing phlogs</h1>
 
-<table>
-  <tr>
-    <th>O</th>
-    <th>Title</th>
-    <th>Body</th>
-    <th>Thumbnail</th>
-    <th>Photographer</th>
-    <th>Author</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @phlogs.each do |phlog| %>
-  <tr>
-    <td><%= phlog.o_id %></td>
-    <td><%= phlog.title %></td>
-    <td><%= phlog.body %></td>
-    <td><%= phlog.thumbnail %></td>
-    <td><%= phlog.photographer %></td>
-    <td><%= phlog.author %></td>
-    <td><%= link_to 'Show', phlog %></td>
-    <td><%= link_to 'Edit', edit_phlog_path(phlog) %></td>
-    <td><%= link_to 'Destroy', phlog, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<% if @phlogs.size > 0 %>
+  <ol>
+  <% @phlogs.each do |phlog| %>
+    <li><%= link_to phlog.title, phlog %></li>
+  <% end %>
+  </ol>
+<% else %>
+  <h3>No Phlogs</h3>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Phlog', new_phlog_path %>

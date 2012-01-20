@@ -1,35 +1,26 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @phlog.title %></h1>
 
-<p>
-  <b>O:</b>
-  <%= @phlog.o_id %>
-</p>
+<div><%= simple_format(@phlog.body.strip) %></div>
 
-<p>
-  <b>Title:</b>
-  <%= @phlog.title %>
-</p>
+<p>By <%= link_to @phlog.author.name, @phlog.author %></p>
 
-<p>
-  <b>Body:</b>
-  <%= @phlog.body %>
-</p>
+<hr/>
 
-<p>
-  <b>Thumbnail:</b>
-  <%= @phlog.thumbnail %>
-</p>
+<% if @phlog.phlog_comments.size > 0 %>
+  <h3><%= pluralize(@phlog.phlog_comments.size,"Comment") %></h3>
+  <ol>
+  <% @phlog.phlog_comments.each do |comment| %>
+    <li>
+      <blockquote><%= comment.body %></blockquote>
+      <p><%= comment.author %>, <%= comment.created_at.strftime("%A, %B %e, %Y at %l:%M %p") %></p>
+    </li>
+  <% end %>
+  </ol>
+<% else %>
+  <h3>No Comments</h3>
+<% end %>
 
-<p>
-  <b>Photographer:</b>
-  <%= @phlog.photographer %>
-</p>
-
-<p>
-  <b>Author:</b>
-  <%= @phlog.author %>
-</p>
-
-
-<%= link_to 'Edit', edit_phlog_path(@phlog) %> |
-<%= link_to 'Back', phlogs_path %>
+<div>
+  <%= link_to 'Edit', edit_phlog_path(@phlog) %> |
+  <%= link_to 'Back', phlogs_path %>
+</div>

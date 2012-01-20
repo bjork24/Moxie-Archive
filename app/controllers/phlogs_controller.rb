@@ -8,4 +8,12 @@ class PhlogsController < ApplicationController
     @phlog = Phlog.find(params[:id])
   end
   
+  def edit
+    @phlog = Phlog.find(params[:id])
+  end
+
+  def update
+    @phlog = Phlog.find(params[:id])
+  end
+  
 end
