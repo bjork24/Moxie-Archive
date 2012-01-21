@@ -8,6 +8,50 @@
 @import "variables";
 
 body {
-  @include container(100%);
   font-family: $sans-serif;
+}
+
+header {
+  @include container($container-width);
+
+  h1 {
+    font-size: 170px;
+    line-height: 170px;
+    padding-bottom: 29px;
+    text-align: center;
+    letter-spacing: 22px;
+    border-bottom: 1px solid #DDD;
+    @include text-shadow(#FFF 4px 4px 0, #DDD 8px 8px 0);
+    
+    
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+  }
+  
+}
+
+#container {
+  @include container($container-width);
+  @include clearfix;
+  border: 1px solid #DDD;
+  border-top: 0;
+  background-color: #FFF;
+  
+  #sidebar {
+    @include float(left);
+    width: 170px;
+    padding: 15px;
+    
+  }
+  
+  #content {
+    @include float(left);
+    width: 450px;
+    padding: 25px;
+
+  }
+  
 }

@@ -1,25 +1,8 @@
-<h1>Listing guestbooks</h1>
-
-<table>
-  <tr>
-    <th>Author</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Guestbook</h1>
 
 <% @guestbooks.each do |guestbook| %>
-  <tr>
-    <td><%= guestbook.author %></td>
-    <td><%= guestbook.body %></td>
-    <td><%= link_to 'Show', guestbook %></td>
-    <td><%= link_to 'Edit', edit_guestbook_path(guestbook) %></td>
-    <td><%= link_to 'Destroy', guestbook, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<div>
+  <p><%= guestbook.body %></p>
+  <%= guestbook.author %>
+</div>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Guestbook', new_guestbook_path %>

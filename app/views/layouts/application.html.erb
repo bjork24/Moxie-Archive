@@ -11,7 +11,16 @@
 </head>
 <body>
 
-<%= yield %>
+  <%= render "layouts/header" %>
+
+  <section id="container">
+    <section id="sidebar">
+      <%= yield :sidebar %>
+    </section>
+    <section id="content">
+      <%= yield %>
+    </section>
+  </section>
 
 </body>
 </html>

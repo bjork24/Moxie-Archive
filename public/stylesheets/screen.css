@@ -86,7 +86,51 @@ html > body {
 
 /* line 10, ../../app/stylesheets/screen.scss */
 body {
-  margin: 0 auto;
-  width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 14, ../../app/stylesheets/screen.scss */
+header {
+  margin: 0 auto;
+  width: 700px;
+}
+/* line 17, ../../app/stylesheets/screen.scss */
+header h1 {
+  font-size: 170px;
+  line-height: 170px;
+  padding-bottom: 29px;
+  text-align: center;
+  letter-spacing: 22px;
+  border-bottom: 1px solid #DDD;
+  text-shadow: white 4px 4px 0, #dddddd 8px 8px 0;
+}
+/* line 27, ../../app/stylesheets/screen.scss */
+header h1 a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 36, ../../app/stylesheets/screen.scss */
+#container {
+  margin: 0 auto;
+  width: 700px;
+  overflow: hidden;
+  *zoom: 1;
+  border: 1px solid #DDD;
+  border-top: 0;
+  background-color: #FFF;
+}
+/* line 43, ../../app/stylesheets/screen.scss */
+#container #sidebar {
+  display: inline;
+  float: left;
+  width: 170px;
+  padding: 15px;
+}
+/* line 50, ../../app/stylesheets/screen.scss */
+#container #content {
+  display: inline;
+  float: left;
+  width: 450px;
+  padding: 25px;
 }
