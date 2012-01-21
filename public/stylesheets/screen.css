@@ -166,18 +166,42 @@ header h1:hover {
   padding: 25px;
 }
 /* line 88, ../../app/stylesheets/screen.scss */
+#container .comments {
+  background-color: #dddddd;
+}
+/* line 91, ../../app/stylesheets/screen.scss */
+#container .comments .comment {
+  border-top: 1px solid #c4c4c4;
+}
+/* line 94, ../../app/stylesheets/screen.scss */
+#container .comments .comment:hover {
+  background-color: #eaeaea;
+}
+/* line 98, ../../app/stylesheets/screen.scss */
+#container .comments .comment .sidebar {
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+}
+/* line 103, ../../app/stylesheets/screen.scss */
+#container .comments .comment .sidebar strong {
+  font-weight: 900;
+  color: #444;
+  display: block;
+}
+/* line 123, ../../app/stylesheets/screen.scss */
 #container .content-sidebar {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 126, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .sidebar {
   display: inline;
   float: left;
-  width: 170px;
-  padding: 15px;
+  width: 150px;
+  padding: 25px;
 }
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 132, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content {
   display: inline;
   float: left;
