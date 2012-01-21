@@ -67,12 +67,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../../app/stylesheets/_variables.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Paytone One", sans-serif;
-  text-transform: uppercase;
-}
-
 /* line 53, ../../../../../../.rvm/gems/ruby-1.9.2-p290@moxie/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 body {
   font-size: 100%;
@@ -85,52 +79,107 @@ html > body {
 }
 
 /* line 10, ../../app/stylesheets/screen.scss */
-body {
+html, body {
+  color: #333333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #aaaaaa;
+}
+/* line 15, ../../app/stylesheets/screen.scss */
+html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
+}
+/* line 20, ../../app/stylesheets/screen.scss */
+html a, body a {
+  text-decoration: none;
+  color: #333333;
+  background-color: #FF9;
 }
 
-/* line 14, ../../app/stylesheets/screen.scss */
+/* line 28, ../../app/stylesheets/screen.scss */
 header {
   margin: 0 auto;
   width: 700px;
 }
-/* line 17, ../../app/stylesheets/screen.scss */
+/* line 31, ../../app/stylesheets/screen.scss */
 header h1 {
   font-size: 170px;
   line-height: 170px;
   padding-bottom: 29px;
   text-align: center;
+  text-shadow: #dddddd 1px 1px 0, #dddddd 2px 2px 0, #dddddd 3px 3px 0, #dddddd 4px 4px 0, #dddddd 5px 5px 0, #dddddd 6px 6px 0, #dddddd 7px 7px 0, #dddddd 8px 8px 0;
   letter-spacing: 22px;
-  border-bottom: 1px solid #DDD;
-  text-shadow: white 4px 4px 0, #dddddd 8px 8px 0;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
-/* line 27, ../../app/stylesheets/screen.scss */
+/* line 50, ../../app/stylesheets/screen.scss */
 header h1 a {
-  color: #333;
+  color: #333333;
+  display: block;
+  width: 100%;
   text-decoration: none;
+  background-color: transparent;
+}
+/* line 58, ../../app/stylesheets/screen.scss */
+header h1:hover {
+  text-shadow: #dc0000 1px 1px 0, #dc0000 2px 2px 0, #dc0000 3px 3px 0, #dc0000 4px 4px 0, #dc0000 5px 5px 0, #dc0000 6px 6px 0, #dc0000 7px 7px 0, #dc0000 8px 8px 0;
+  letter-spacing: 12px;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
-/* line 36, ../../app/stylesheets/screen.scss */
+/* line 78, ../../app/stylesheets/screen.scss */
 #container {
   margin: 0 auto;
   width: 700px;
+  -webkit-border-radius: 2px 2px;
+  -moz-border-radius: 2px / 2px;
+  -o-border-radius: 2px / 2px;
+  -ms-border-radius: 2px / 2px;
+  -khtml-border-radius: 2px / 2px;
+  border-radius: 2px / 2px;
+  background-color: #FFF;
+  margin-bottom: 25px;
+}
+/* line 84, ../../app/stylesheets/screen.scss */
+#container .content {
+  padding: 25px;
+}
+/* line 88, ../../app/stylesheets/screen.scss */
+#container .content-sidebar {
   overflow: hidden;
   *zoom: 1;
-  border: 1px solid #DDD;
-  border-top: 0;
-  background-color: #FFF;
 }
-/* line 43, ../../app/stylesheets/screen.scss */
-#container #sidebar {
+/* line 91, ../../app/stylesheets/screen.scss */
+#container .content-sidebar .sidebar {
   display: inline;
   float: left;
   width: 170px;
   padding: 15px;
 }
-/* line 50, ../../app/stylesheets/screen.scss */
-#container #content {
+/* line 97, ../../app/stylesheets/screen.scss */
+#container .content-sidebar .content {
   display: inline;
   float: left;
   width: 450px;
-  padding: 25px;
 }

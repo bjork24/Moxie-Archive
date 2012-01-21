@@ -1,15 +1,19 @@
-<h1>Listing posts</h1>
-
-<% if @posts.size > 0 %>
-  <ol>
-  <% @posts.each do |post| %>
-    <li><%= link_to post.title, post %></li>
-  <% end %>
-  </ol>
-<% else %>
-  <h3>No Posts</h3>
-<% end %>
-
-<% cache "year_nav" do %>
-  <%= render "year_nav" %>
-<% end %>
+<div class="content-sidebar">
+  <div class="sidebar">
+    <% cache "year_nav" do %>
+      <%= render "year_nav" %>
+    <% end %>
+  </div>
+  <div class="content">
+    <h1>Listing posts</h1>
+    <% if @posts.size > 0 %>
+      <ol>
+      <% @posts.each do |post| %>
+        <li><%= link_to post.title, post %></li>
+      <% end %>
+      </ol>
+    <% else %>
+      <h3>No Posts</h3>
+    <% end %>
+  </div>
+</div>

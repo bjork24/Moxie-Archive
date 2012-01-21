@@ -7,8 +7,22 @@
 @import "compass/reset";
 @import "variables";
 
-body {
+html,body {
+  color: $black;
   font-family: $sans-serif;
+  background-color: $gray;
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $headline-font;
+    text-transform: uppercase;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $black;
+    background-color: #FF9;
+  }
+  
 }
 
 header {
@@ -19,14 +33,42 @@ header {
     line-height: 170px;
     padding-bottom: 29px;
     text-align: center;
+    @include text-shadow(
+      $light-gray 1px 1px 0,
+      $light-gray 2px 2px 0,
+      $light-gray 3px 3px 0,
+      $light-gray 4px 4px 0,
+      $light-gray 5px 5px 0,
+      $light-gray 6px 6px 0,
+      $light-gray 7px 7px 0,
+      $light-gray 8px 8px 0);
     letter-spacing: 22px;
-    border-bottom: 1px solid #DDD;
-    @include text-shadow(#FFF 4px 4px 0, #DDD 8px 8px 0);
-    
+    @include transition-property;
+    @include transition-duration(0.5s);
+    @include transition-timing-function("ease-in-out");
     
     a {
-      color: #333;
+      color: $black;
+      display: block;
+      width: 100%;
       text-decoration: none;
+      background-color: transparent;
+    }
+    
+    &:hover {
+      @include text-shadow(
+        $red 1px 1px 0,
+        $red 2px 2px 0,
+        $red 3px 3px 0,
+        $red 4px 4px 0,
+        $red 5px 5px 0,
+        $red 6px 6px 0,
+        $red 7px 7px 0,
+        $red 8px 8px 0);
+      letter-spacing: 12px;
+      @include transition-property;
+      @include transition-duration(0.5s);
+      @include transition-timing-function("ease-in-out");      
     }
     
   }
@@ -34,24 +76,29 @@ header {
 }
 
 #container {
-  @include container($container-width);
-  @include clearfix;
-  border: 1px solid #DDD;
-  border-top: 0;
+  @include container;
+  @include border-radius(2px,2px);
   background-color: #FFF;
+  margin-bottom: 25px;
   
-  #sidebar {
-    @include float(left);
-    width: 170px;
-    padding: 15px;
-    
+  .content {
+    padding: 25px;
   }
   
-  #content {
-    @include float(left);
-    width: 450px;
-    padding: 25px;
+  .content-sidebar {
+    @include clearfix;
+    
+    .sidebar {
+      @include float(left);
+      width: 170px;
+      padding: 15px;
+    }
 
+    .content {
+      @include float(left);
+      width: 450px;
+    }
+    
   }
   
 }

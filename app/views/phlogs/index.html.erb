@@ -3,7 +3,10 @@
 <% if @phlogs.size > 0 %>
   <ol>
   <% @phlogs.each do |phlog| %>
-    <li><%= link_to phlog.title, phlog %></li>
+    <li>
+      <%= image_tag "http://moxie.danchilton.com/pix/phlog/thumbs/#{phlog.thumbnail}" %>
+      <%= link_to phlog.title, phlog %>
+    </li>
   <% end %>
   </ol>
 <% else %>
