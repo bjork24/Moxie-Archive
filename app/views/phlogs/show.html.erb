@@ -1,26 +1,36 @@
-<h1><%= @phlog.title %></h1>
+<div class="content-sidebar post">
+  <div class="sidebar">
+    <p>
+      <strong>Written by <%= link_to @phlog.author.name, @phlog.author %></strong>
+      <em><%= @phlog.created_at.strftime("%b %-d, %Y @ %l:%M %P") %></em>
+    </p>
+    <% if @phlog.phlog_comments.size > 0 %>
+      <p><strong><%= link_to pluralize(@phlog.phlog_comments.size,"Comment"), "#comments" %></strong></p>
+    <% end %>
+    <p><strong>Photos by <%= @phlog.photographer %></strong></p>
+  </div>
+  <div class="content">
+    <h1><%= @phlog.title %></h1>
+    <%= simple_format(@phlog.body.strip) %>
+  </div>
+</div>
 
-<div><%= simple_format(@phlog.body.strip) %></div>
-
-<p>By <%= link_to @phlog.author.name, @phlog.author %></p>
-
-<hr/>
-
-<% if @phlog.phlog_comments.size > 0 %>
-  <h3><%= pluralize(@phlog.phlog_comments.size,"Comment") %></h3>
-  <ol>
-  <% @phlog.phlog_comments.each do |comment| %>
-    <li>
-      <blockquote><%= comment.body %></blockquote>
-      <p><%= comment.author %>, <%= comment.created_at.strftime("%A, %B %e, %Y at %l:%M %p") %></p>
-    </li>
+<a name="comments"></a>
+<div class="comments">
+  <% if @phlog.phlog_comments.size > 0 %>
+    <h3><%= pluralize(@phlog.phlog_comments.size,"Comment") %></h3>
+    <% @phlog.phlog_comments.each do |comment| %>
+      <div class="content-sidebar comment <%= "moderator" if is_moderator? comment.author %>">
+        <div class="sidebar">
+          <strong><%= comment.author %></strong>
+          <em><%= comment.created_at.strftime("%b %-d, %Y @ %l:%M %P") %></em>
+        </div>
+        <div class="content">
+          <%= simple_format(comment.body) %>
+        </div>
+      </div>
+    <% end %>
+  <% else %>
+    <h3>No Comments</h3>
   <% end %>
-  </ol>
-<% else %>
-  <h3>No Comments</h3>
-<% end %>
-
-<div>
-  <%= link_to 'Edit', edit_phlog_path(@phlog) %> |
-  <%= link_to 'Back', phlogs_path %>
 </div>
