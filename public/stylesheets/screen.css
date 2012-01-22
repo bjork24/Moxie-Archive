@@ -275,77 +275,84 @@ header nav a:hover {
 }
 /* line 175, ../../app/stylesheets/screen.scss */
 #container .post .content h1 {
-  margin-top: -5px;
   width: 80%;
 }
-/* line 184, ../../app/stylesheets/screen.scss */
+/* line 183, ../../app/stylesheets/screen.scss */
 #container .comments {
   background-color: #dddddd;
 }
-/* line 187, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 #container .comments h3 {
   background-color: #333333;
   color: #FFF;
   padding: 10px 20px;
   font-size: 20px;
 }
-/* line 194, ../../app/stylesheets/screen.scss */
+/* line 193, ../../app/stylesheets/screen.scss */
 #container .comments .comment {
   border-top: 1px solid #c4c4c4;
 }
-/* line 197, ../../app/stylesheets/screen.scss */
+/* line 196, ../../app/stylesheets/screen.scss */
 #container .comments .comment:hover {
   background-color: #eaeaea;
 }
-/* line 201, ../../app/stylesheets/screen.scss */
+/* line 200, ../../app/stylesheets/screen.scss */
 #container .comments .comment.moderator {
   border-left: 4px solid #dc0000;
 }
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 204, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar {
   color: #666;
   text-align: right;
 }
-/* line 209, ../../app/stylesheets/screen.scss */
+/* line 208, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar strong {
   font-weight: 900;
   color: #444;
   display: block;
   font-size: 14px;
 }
-/* line 216, ../../app/stylesheets/screen.scss */
+/* line 215, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar em {
   font-size: 12px;
 }
-/* line 226, ../../app/stylesheets/screen.scss */
+/* line 225, ../../app/stylesheets/screen.scss */
 #container .content-sidebar {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 229, ../../app/stylesheets/screen.scss */
+/* line 228, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .sidebar {
   display: inline;
   float: left;
   width: 150px;
   padding: 25px;
 }
-/* line 235, ../../app/stylesheets/screen.scss */
+/* line 234, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content {
   display: inline;
   float: left;
   width: 445px;
 }
-/* line 239, ../../app/stylesheets/screen.scss */
+/* line 238, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img {
   border: 1px solid #dddddd;
   padding: 10px;
   margin-top: 25px;
 }
-/* line 244, ../../app/stylesheets/screen.scss */
+/* line 243, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img:first-child {
   margin-top: 0;
 }
-/* line 256, ../../app/stylesheets/screen.scss */
+/* line 249, ../../app/stylesheets/screen.scss */
+#container .content-sidebar .content h1 {
+  margin-top: -5px;
+}
+/* line 257, ../../app/stylesheets/screen.scss */
+#container #phlog-list {
+  margin-top: 25px;
+}
+/* line 260, ../../app/stylesheets/screen.scss */
 #container #phlog-list li {
   overflow: hidden;
   *zoom: 1;
@@ -353,19 +360,19 @@ header nav a:hover {
   overflow: hidden;
   margin: 10px 0;
 }
-/* line 262, ../../app/stylesheets/screen.scss */
+/* line 266, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link {
   display: inline;
   float: left;
   width: 180px;
   overflow: hidden;
 }
-/* line 267, ../../app/stylesheets/screen.scss */
+/* line 271, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link img {
   width: 200px;
   margin-left: -15px;
 }
-/* line 274, ../../app/stylesheets/screen.scss */
+/* line 278, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link {
   display: inline;
   float: left;
@@ -373,20 +380,84 @@ header nav a:hover {
   height: 58px;
   padding: 7px 18px 7px 13px;
 }
-/* line 280, ../../app/stylesheets/screen.scss */
+/* line 284, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link strong {
   font-weight: 900;
   display: block;
 }
-/* line 285, ../../app/stylesheets/screen.scss */
+/* line 289, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link em {
   display: block;
   color: gray;
   font-size: 12px;
   margin-top: -2px;
 }
-/* line 296, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 #container #phlog-list li:hover .meta-link {
   background-color: #333333;
   color: #FFF;
+}
+/* line 313, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+/* line 318, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 5px 15px;
+}
+/* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p290@moxie/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#container #year-nav-container #year-nav .year {
+  *display: inline;
+}
+/* line 324, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year.active h2 {
+  color: #333333;
+}
+/* line 328, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year.active ul {
+  display: block;
+  z-index: 0;
+}
+/* line 337, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year:hover h2 {
+  border-bottom: 1px solid #333333;
+}
+/* line 341, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year:hover ul {
+  display: block;
+  z-index: 1;
+}
+/* line 348, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year h2 {
+  color: #dc0000;
+}
+/* line 352, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year ul {
+  width: 650px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 360, ../../app/stylesheets/screen.scss */
+#container #year-nav-container #year-nav .year ul li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin: 5px 10px;
+  color: #919191;
+}
+/* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p290@moxie/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#container #year-nav-container #year-nav .year ul li {
+  *display: inline;
 }

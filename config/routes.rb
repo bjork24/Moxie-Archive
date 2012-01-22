@@ -16,6 +16,7 @@ Moxie::Application.routes.draw do
   root :to => "pages#home"
   
   match "guestbook" => "guestbooks#index", :as => :guestbook
+  match "about" => "pages#about", :as => :about
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
