@@ -179,14 +179,15 @@ header nav ul li a:hover {
   color: #FFF;
 }
 
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 #posts-body #posts-nav,
+#categories-body #posts-nav,
 #phlogs-body #phlogs-nav,
 #guestbook-body #guestbook-nav {
   color: #FFF;
 }
 
-/* line 109, ../../app/stylesheets/screen.scss */
+/* line 110, ../../app/stylesheets/screen.scss */
 #container {
   margin: 0 auto;
   width: 700px;
@@ -199,38 +200,38 @@ header nav ul li a:hover {
   background-color: #FFF;
   margin-bottom: 25px;
 }
-/* line 115, ../../app/stylesheets/screen.scss */
+/* line 116, ../../app/stylesheets/screen.scss */
 #container .content {
   padding: 25px;
 }
-/* line 121, ../../app/stylesheets/screen.scss */
+/* line 122, ../../app/stylesheets/screen.scss */
 #container .post .sidebar {
   font-size: 14px;
   color: #737373;
   text-align: right;
 }
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p {
   margin-top: 25px;
 }
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 130, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p:first-child {
   margin-top: 0;
 }
-/* line 133, ../../app/stylesheets/screen.scss */
+/* line 134, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p strong {
   display: block;
   font-weight: 900;
 }
-/* line 138, ../../app/stylesheets/screen.scss */
+/* line 139, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p em {
   font-size: 13px;
 }
-/* line 146, ../../app/stylesheets/screen.scss */
+/* line 147, ../../app/stylesheets/screen.scss */
 #container .post .content {
   padding-bottom: 35px;
 }
-/* line 149, ../../app/stylesheets/screen.scss */
+/* line 150, ../../app/stylesheets/screen.scss */
 #container .post .content h1 {
   font-size: 40px;
   line-height: 45px;
@@ -238,78 +239,78 @@ header nav ul li a:hover {
   width: 80%;
   text-shadow: #dddddd 1px 1px 0, #dddddd 2px 2px 0, #dddddd 3px 3px 0;
 }
-/* line 164, ../../app/stylesheets/screen.scss */
+/* line 165, ../../app/stylesheets/screen.scss */
 #container .comments {
   background-color: #dddddd;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 168, ../../app/stylesheets/screen.scss */
 #container .comments h3 {
   background-color: #333333;
   color: #FFF;
   padding: 10px 20px;
   font-size: 20px;
 }
-/* line 174, ../../app/stylesheets/screen.scss */
+/* line 175, ../../app/stylesheets/screen.scss */
 #container .comments .comment {
   border-top: 1px solid #c4c4c4;
 }
-/* line 177, ../../app/stylesheets/screen.scss */
+/* line 178, ../../app/stylesheets/screen.scss */
 #container .comments .comment:hover {
   background-color: #eaeaea;
 }
-/* line 181, ../../app/stylesheets/screen.scss */
+/* line 182, ../../app/stylesheets/screen.scss */
 #container .comments .comment.moderator {
   border-left: 4px solid #dc0000;
 }
-/* line 185, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar {
   color: #666;
   text-align: right;
 }
-/* line 189, ../../app/stylesheets/screen.scss */
+/* line 190, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar strong {
   font-weight: 900;
   color: #444;
   display: block;
   font-size: 14px;
 }
-/* line 196, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar em {
   font-size: 12px;
 }
-/* line 206, ../../app/stylesheets/screen.scss */
+/* line 207, ../../app/stylesheets/screen.scss */
 #container .content-sidebar {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 209, ../../app/stylesheets/screen.scss */
+/* line 210, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .sidebar {
   display: inline;
   float: left;
   width: 150px;
   padding: 25px;
 }
-/* line 215, ../../app/stylesheets/screen.scss */
+/* line 216, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content {
   display: inline;
   float: left;
   width: 445px;
 }
-/* line 219, ../../app/stylesheets/screen.scss */
+/* line 220, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content p {
   margin-top: 25px;
 }
-/* line 222, ../../app/stylesheets/screen.scss */
+/* line 223, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content p:first-child {
   margin-top: 0;
 }
-/* line 228, ../../app/stylesheets/screen.scss */
+/* line 229, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img {
   border: 1px solid #dddddd;
   padding: 10px;
   margin-top: 25px;
 }
-/* line 233, ../../app/stylesheets/screen.scss */
+/* line 234, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img:first-child {
   margin-top: 0;
 }
