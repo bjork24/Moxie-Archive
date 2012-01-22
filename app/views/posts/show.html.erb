@@ -1,12 +1,20 @@
-<div class="content-sidebar">
+<div class="content-sidebar post">
   <div class="sidebar">
-    <p>By <%= link_to @post.author.name, @post.author %></p>
-    <p>Categories:</p>
-    <ul>
-      <% @post.categories.each do |c| %>
-        <li><%= link_to c.name, c %></li>
-      <% end %>
-    </ul>
+    <p>
+      <strong>Written by <%= link_to @post.author.name, @post.author %></strong>
+      <em><%= @post.created_at.strftime("%b %-d, %Y @ %l:%M %P") %></em>
+    </p>
+    <% if @post.comments.size > 0 %>
+      <p><strong><%= link_to pluralize(@post.comments.size,"Comment"), "#comments" %></strong></p>
+    <% end %>
+    <p>
+      <strong>Categories</strong>
+      <ul>
+        <% @post.categories.each do |c| %>
+          <li><%= link_to c.name, c %></li>
+        <% end %>
+      </ul>
+    </p>
   </div>
   <div class="content">
     <h1><%= @post.title %></h1>
@@ -14,21 +22,26 @@
   </div>
 </div>
 
-<% if @post.comments.size > 0 %>
-  <div class="comments">
+<a name="comments"></a>
+<div class="comments">
+  <% if @post.comments.size > 0 %>
     <h3><%= pluralize(@post.comments.size,"Comment") %></h3>
     <% @post.comments.each do |comment| %>
-      <div class="content-sidebar comment">
+      <div class="content-sidebar comment <%= "moderator" if is_moderator? comment.author %>">
         <div class="sidebar">
           <strong><%= comment.author %></strong>
-          <em><%= comment.created_at.strftime("%b. %-d, %Y @ %l:%M %P") %></em>
+          <em><%= comment.created_at.strftime("%b %-d, %Y @ %l:%M %P") %></em>
         </div>
         <div class="content">
           <%= simple_format(comment.body) %>
         </div>
       </div>
     <% end %>
-  </div>
-<% else %>
-  <h3>No Comments</h3>
-<% end %>
+  <% else %>
+    <% if !@post.allow_comments %>
+      <h3>Comments Disabled</h3>
+    <% else %>
+      <h3>No Comments</h3>
+    <% end %>
+  <% end %>
+</div>
