@@ -1,7 +1,7 @@
 class GuestbooksController < ApplicationController
   
   def index
-    @guestbooks = Guestbook.all
+    @guestbooks = Guestbook.find(:all, :order => 'created_at')
   end
   
 end

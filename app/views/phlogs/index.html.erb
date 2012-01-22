@@ -1,14 +1,19 @@
-<h1>Listing phlogs</h1>
+<div class="content">
 
-<% if @phlogs.size > 0 %>
-  <ol>
-  <% @phlogs.each do |phlog| %>
-    <li>
-      <%= image_tag "http://moxie.danchilton.com/pix/phlog/thumbs/#{phlog.thumbnail}" %>
-      <%= link_to phlog.title, phlog %>
-    </li>
-  <% end %>
-  </ol>
-<% else %>
-  <h3>No Phlogs</h3>
-<% end %>
+  <h1>Listing phlogs</h1>
+
+  <p>The phlogs that were</p>
+
+  <ul id="phlog-list">
+    <% @phlogs.each do |phlog| %>
+      <li>
+        <%= link_to image_tag("http://moxie.danchilton.com/pix/phlog/thumbs/#{phlog.thumbnail}"), phlog, :class => "image-link" %>
+        <%= link_to phlog, :class => "meta-link" do %>
+          <strong><%= phlog.title %></strong>
+          <em><%= phlog.created_at.strftime("%b %-d, %Y @ %l:%M %P") %>, <%= pluralize(phlog.phlog_comments.size,"comment") %></em>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>
