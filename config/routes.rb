@@ -11,7 +11,7 @@ Moxie::Application.routes.draw do
   resources :comments
   
   resources :posts
-  match '/posts/:year/:month' => 'posts#index'
+  match '/posts/date/:year(/:month)' => 'posts#index'
   
   root :to => "pages#home"
   

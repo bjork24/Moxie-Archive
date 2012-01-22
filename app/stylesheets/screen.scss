@@ -308,67 +308,25 @@ header {
     
   }
   
-  #year-nav-container {
-
-    #year-nav {
-      text-align: center;
-      position: relative;
-      margin-bottom: 50px;
-
-      .year {
-        @include inline-block;
-        padding: 5px 15px;
-
-        &.active {
-
-          h2 {
-            color: $black;
-          }
-
-          ul {
-            display: block;
-            z-index: 0;
-          }
-
+  #year-nav {
+    text-align: center;
+    
+    li {
+      @include inline-block;
+      font-size: 20px;
+      font-weight: 900;
+      padding: 10px 20px;
+      
+      &.active {
+        
+        a{
+          color: $black;
         }
         
-        &:hover {
-
-          h2 {
-            border-bottom: 1px solid $black;
-          }
-
-          ul {
-            display: block;
-            z-index: 1;
-          }
-
-        }
-
-        h2 {
-          color: $red;
-        }
-
-        ul {
-          width: 650px;
-          position: absolute;
-          top: 30px;
-          left: 0;
-          display: none;
-          background-color: rgba(#FFF,0.9);
-
-          li {
-            @include inline-block;
-            margin: 5px 10px;
-            color: darken($light-gray,30%);
-          }
-
-        }
-
       }
-
+      
     }
-
+    
   }
-  
+    
 }

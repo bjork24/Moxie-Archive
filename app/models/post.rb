@@ -7,6 +7,11 @@ class Post < ActiveRecord::Base
     Post.select("created_at").map{ |item| item.created_at.year }.uniq
   end
   
+  def self.posts_by_year(year)
+    get_year = Date.new(year.to_i)
+    Post.find(:all, :conditions => ["created_at BETWEEN ? AND ?", get_year, get_year.end_of_year ])
+  end
+  
   def self.posts_by_month(year,month)
     get_month = Date.new(year.to_i,month.to_i)
     Post.find(:all, :conditions => ["created_at BETWEEN ? AND ?", get_month, get_month.end_of_month ])

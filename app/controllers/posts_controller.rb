@@ -1,10 +1,15 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = params[:year] && params[:month] ?
-      Post.posts_by_month(params[:year], params[:month]) :
-      Post.all
+    if params[:year] && params[:month]
+      @posts = Post.posts_by_month(params[:year], params[:month])
+    elsif params[:year] && !params[:month]
+      @posts = Post.posts_by_year(params[:year])
+    else
+      @posts = Post.all
+    end
     @years = Post.years
+    @current_year = params[:year] || @years.first;
   end
 
   def show

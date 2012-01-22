@@ -397,67 +397,26 @@ header nav a:hover {
   background-color: #333333;
   color: #FFF;
 }
-/* line 313, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav {
+/* line 311, ../../app/stylesheets/screen.scss */
+#container #year-nav {
   text-align: center;
-  position: relative;
-  margin-bottom: 50px;
 }
-/* line 318, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year {
+/* line 314, ../../app/stylesheets/screen.scss */
+#container #year-nav li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px 20px;
 }
 /* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p290@moxie/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#container #year-nav-container #year-nav .year {
+#container #year-nav li {
   *display: inline;
 }
-/* line 324, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year.active h2 {
+/* line 322, ../../app/stylesheets/screen.scss */
+#container #year-nav li.active a {
   color: #333333;
-}
-/* line 328, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year.active ul {
-  display: block;
-  z-index: 0;
-}
-/* line 337, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year:hover h2 {
-  border-bottom: 1px solid #333333;
-}
-/* line 341, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year:hover ul {
-  display: block;
-  z-index: 1;
-}
-/* line 348, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year h2 {
-  color: #dc0000;
-}
-/* line 352, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year ul {
-  width: 650px;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  display: none;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-/* line 360, ../../app/stylesheets/screen.scss */
-#container #year-nav-container #year-nav .year ul li {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  margin: 5px 10px;
-  color: #919191;
-}
-/* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p290@moxie/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#container #year-nav-container #year-nav .year ul li {
-  *display: inline;
 }
