@@ -72,7 +72,39 @@ header {
     
   }
   
+  nav {
+    background-color: $black;
+    font-family: $headline-font;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    
+    ul {
+      text-align: right;
+      
+      li {
+        @include inline-block;
+        margin-left: 25px;
+        
+        a {
+          color: $red;
+          
+          &:hover {
+            color: #FFF;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+  }
+  
 }
+
+#posts-body #posts-nav,
+#phlogs-body #phlogs-nav,
+#guestbook-body #guestbook-nav { color: #FFF; }
 
 #container {
   @include container;
