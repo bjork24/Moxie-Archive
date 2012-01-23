@@ -14,7 +14,7 @@
 
 <ol>
 <% @category.posts.each do |post| %>
-  <li><%= link_to post.title, post %></li>
+  <li><%= make_post_link(post) %></li>
 <% end %>
 </ol>
 
