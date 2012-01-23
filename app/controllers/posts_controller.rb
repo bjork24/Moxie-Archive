@@ -14,6 +14,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by_o_id(params[:id]) || not_found
+    @years = Post.years
+    @current_year = @post.created_at.year;
   end
   
   # GET /posts/1/edit
