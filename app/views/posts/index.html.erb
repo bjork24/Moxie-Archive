@@ -1,6 +1,4 @@
-<% cache "year_nav" do %>
-  <%= render "year_nav" %>
-<% end %>
+<%= render "year_nav" %>
 
 <div class="content">
   
@@ -8,23 +6,21 @@
   
 </div>
 
-<% cache "year_list" do %>
-  <% (1..12).each do |month| %>
-    <div class="post-index content-sidebar">
-      <div class="sidebar">
-        <%= Date.new(@current_year.to_i,month).strftime("%B") %>
-      </div>
-      <div class="content">
-        <% if Post.posts_by_month(@current_year,month).size > 0 %>
-          <ul>
-            <% Post.posts_by_month(@current_year,month).each do |post| %>
-              <li><%= "#{post.created_at.strftime('%d')}." %> <%= make_post_link(post) %></li>
-            <% end %>
-          </ul>
-        <% else %>
-          <h4>No Posts for this month</h4>
-        <% end %>
-      </div>
+<% (1..12).each do |month| %>
+  <div class="post-index content-sidebar">
+    <div class="sidebar">
+      <%= Date.new(@current_year.to_i,month).strftime("%B") %>
     </div>
-  <% end %>
-<%end%>
+    <div class="content">
+      <% if Post.posts_by_month(@current_year,month).size > 0 %>
+        <ul>
+          <% Post.posts_by_month(@current_year,month).each do |post| %>
+            <li><%= "#{post.created_at.strftime('%d')}." %> <%= make_post_link(post) %></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <h4>No Posts for this month</h4>
+      <% end %>
+    </div>
+  </div>
+<% end %>
