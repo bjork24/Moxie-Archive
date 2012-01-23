@@ -349,16 +349,17 @@ header {
       @include float(left);
       font-weight: 900;
       padding: 4px 15px 6px;
-      position: relative;      
+      position: relative;
+      
+      &.active {
+        
+        a{
+          color: #FFF;
+        }
+        
+      }
+      
     }
-    
-    &.active-2004 #nav-2004,
-    &.active-2005 #nav-2005,
-    &.active-2006 #nav-2006,
-    &.active-2007 #nav-2007,
-    &.active-2008 #nav-2008,
-    &.active-2009 #nav-2009,
-    &.active-2010 #nav-2010 { color: #FFF; }
     
   }
         

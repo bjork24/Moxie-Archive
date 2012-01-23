@@ -435,7 +435,7 @@ header nav a:hover {
   padding: 4px 15px 6px;
   position: relative;
 }
-/* line 361, ../../app/stylesheets/screen.scss */
-#container #year-nav.active-2004 #nav-2004, #container #year-nav.active-2005 #nav-2005, #container #year-nav.active-2006 #nav-2006, #container #year-nav.active-2007 #nav-2007, #container #year-nav.active-2008 #nav-2008, #container #year-nav.active-2009 #nav-2009, #container #year-nav.active-2010 #nav-2010 {
+/* line 356, ../../app/stylesheets/screen.scss */
+#container #year-nav li.active a {
   color: #FFF;
 }
