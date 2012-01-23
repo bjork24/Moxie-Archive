@@ -1,6 +1,6 @@
 <ul id="year-nav">
   <% @years.each do |year| %>
-    <% my_class = params[:year].to_i == year || (!params[:year] && @years.first == year) ? "active" : "not-active" %>
+    <% my_class = @current_year.to_i === year ? "active" : "not-active" %>
     <li class="<%= my_class %>"><%= link_to year, "/posts/date/#{year}" %></li>
   <% end %>
 </ul>
