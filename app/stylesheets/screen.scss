@@ -252,6 +252,38 @@ header {
       
     }
     
+    &.post-index {
+      
+      .sidebar {
+        font-size: 14px;
+        text-align: right;
+        font-weight: 900;
+      }
+      
+      .content {
+        
+        h4 {
+          color: $gray;
+        }
+        
+        ul {
+          li {
+            margin: 10px 0;
+            font-size: 18px;
+            &:first-child {
+             margin-top: 0; 
+            }
+          }
+        }
+        
+      }
+      
+      &:nth-child(2n) {
+        background-color: lighten($light-gray,10%);
+      }
+      
+    }
+    
   }
   
   #phlog-list {
@@ -309,18 +341,20 @@ header {
   }
   
   #year-nav {
-    text-align: center;
+    background-color: $black;
+    @include clearfix;
+    padding-left: 2px;
     
     li {
-      @include inline-block;
-      font-size: 20px;
+      @include float(left);
       font-weight: 900;
-      padding: 10px 20px;
+      padding: 4px 15px 6px;
+      position: relative;
       
       &.active {
         
         a{
-          color: $black;
+          color: #FFF;
         }
         
       }
@@ -328,5 +362,5 @@ header {
     }
     
   }
-    
+        
 }

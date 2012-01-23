@@ -349,10 +349,33 @@ header nav a:hover {
   margin-top: -5px;
 }
 /* line 257, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .sidebar {
+  font-size: 14px;
+  text-align: right;
+  font-weight: 900;
+}
+/* line 265, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .content h4 {
+  color: #aaaaaa;
+}
+/* line 270, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .content ul li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+/* line 273, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .content ul li:first-child {
+  margin-top: 0;
+}
+/* line 281, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+/* line 289, ../../app/stylesheets/screen.scss */
 #container #phlog-list {
   margin-top: 25px;
 }
-/* line 260, ../../app/stylesheets/screen.scss */
+/* line 292, ../../app/stylesheets/screen.scss */
 #container #phlog-list li {
   overflow: hidden;
   *zoom: 1;
@@ -360,19 +383,19 @@ header nav a:hover {
   overflow: hidden;
   margin: 10px 0;
 }
-/* line 266, ../../app/stylesheets/screen.scss */
+/* line 298, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link {
   display: inline;
   float: left;
   width: 180px;
   overflow: hidden;
 }
-/* line 271, ../../app/stylesheets/screen.scss */
+/* line 303, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link img {
   width: 200px;
   margin-left: -15px;
 }
-/* line 278, ../../app/stylesheets/screen.scss */
+/* line 310, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link {
   display: inline;
   float: left;
@@ -380,43 +403,39 @@ header nav a:hover {
   height: 58px;
   padding: 7px 18px 7px 13px;
 }
-/* line 284, ../../app/stylesheets/screen.scss */
+/* line 316, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link strong {
   font-weight: 900;
   display: block;
 }
-/* line 289, ../../app/stylesheets/screen.scss */
+/* line 321, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link em {
   display: block;
   color: gray;
   font-size: 12px;
   margin-top: -2px;
 }
-/* line 300, ../../app/stylesheets/screen.scss */
+/* line 332, ../../app/stylesheets/screen.scss */
 #container #phlog-list li:hover .meta-link {
   background-color: #333333;
   color: #FFF;
 }
-/* line 311, ../../app/stylesheets/screen.scss */
+/* line 343, ../../app/stylesheets/screen.scss */
 #container #year-nav {
-  text-align: center;
+  background-color: #333333;
+  overflow: hidden;
+  *zoom: 1;
+  padding-left: 2px;
 }
-/* line 314, ../../app/stylesheets/screen.scss */
+/* line 348, ../../app/stylesheets/screen.scss */
 #container #year-nav li {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  font-size: 20px;
+  display: inline;
+  float: left;
   font-weight: 900;
-  padding: 10px 20px;
+  padding: 4px 15px 6px;
+  position: relative;
 }
-/* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p290@moxie/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#container #year-nav li {
-  *display: inline;
-}
-/* line 322, ../../app/stylesheets/screen.scss */
+/* line 356, ../../app/stylesheets/screen.scss */
 #container #year-nav li.active a {
-  color: #333333;
+  color: #FFF;
 }
