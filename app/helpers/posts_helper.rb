@@ -10,4 +10,8 @@ module PostsHelper
     end
   end
   
+  def make_post_link(post)
+    link_to post.title, "/posts/#{post.o_id}"
+  end
+  
 end

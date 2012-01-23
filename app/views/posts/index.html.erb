@@ -18,7 +18,7 @@
         <% if Post.posts_by_month(@current_year,month).size > 0 %>
           <ul>
             <% Post.posts_by_month(@current_year,month).each do |post| %>
-              <li><%= "#{post.created_at.strftime('%d')}." %> <%= link_to  post.title, post %></li>
+              <li><%= "#{post.created_at.strftime('%d')}." %> <%= make_post_link(post) %></li>
             <% end %>
           </ul>
         <% else %>
