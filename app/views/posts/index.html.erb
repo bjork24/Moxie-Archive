@@ -6,30 +6,32 @@
 
 <% (1..12).each do |month| %>
   <% month_posts = Post.posts_by_month(@current_year,month) %>
-  <div class="content-sidebar post-index">
-    <a name="<%= month %>"></a>
-    <div class="sidebar">
-      <strong><%= Date.new(@current_year.to_i,month).strftime("%B %Y") %></strong>
-      <% if month_posts.size > 0 %>
-        <em><%= pluralize(month_posts.size,"post") %></em>
-        <em><%= pluralize(month_posts.collect{|x|x.comments.size}.sum,"comment") %></em>
-      <% end %>
+  <% if month_posts.size > 0 %>
+    <div class="content-sidebar post-index">
+      <a name="<%= month %>"></a>
+      <div class="sidebar">
+        <strong><%= Date.new(@current_year.to_i,month).strftime("%B %Y") %></strong>
+        <% if month_posts.size > 0 %>
+          <em><%= pluralize(month_posts.size,"post") %></em>
+          <em><%= pluralize(month_posts.collect{|x|x.comments.size}.sum,"comment") %></em>
+        <% end %>
+      </div>
+      <div class="content">
+        <% if month_posts.size > 0 %>
+          <ul>
+            <% month_posts.each do |post| %>
+              <li>
+                <%= content_tag :span, post.created_at.strftime('%d') %>
+                <%= make_post_link(post) %>
+              </li>
+            <% end %>
+          </ul>
+        <% else %>
+          <h4>No Posts</h4>
+        <% end %>
+      </div>
     </div>
-    <div class="content">
-      <% if month_posts.size > 0 %>
-        <ul>
-          <% month_posts.each do |post| %>
-            <li>
-              <%= content_tag :span, post.created_at.strftime('%d') %>
-              <%= make_post_link(post) %>
-            </li>
-          <% end %>
-        </ul>
-      <% else %>
-        <h4>No Posts</h4>
-      <% end %>
-    </div>
-  </div>
+  <% end %>
 <% end %>
 
 <%= render "year_nav", :show_months => false %>
