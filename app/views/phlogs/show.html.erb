@@ -15,6 +15,8 @@
   </div>
 </div>
 
+<%= render "posts/post_nav", :post => @phlog %>
+
 <a name="comments"></a>
 <div class="comments">
   <% if @phlog.phlog_comments.size > 0 %>

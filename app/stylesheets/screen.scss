@@ -481,4 +481,28 @@ header {
     
   }
   
+  #post-nav {    
+    @include clearfix;
+    padding: 10px 20px;
+    
+    a {
+      display: block;
+      color: $gray;
+      
+      &:hover {
+        color: $black;
+      }
+      
+      &.prev-post-link {
+        @include float(left);
+      }
+      
+      &.next-post-link {
+        @include float(right);
+      }
+      
+    }
+    
+  }
+  
 }

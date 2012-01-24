@@ -556,3 +556,28 @@ header nav a:hover {
 #container #month-nav-holder .month-nav li.active a {
   color: #333333;
 }
+/* line 484, ../../app/stylesheets/screen.scss */
+#container #post-nav {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 10px 20px;
+}
+/* line 488, ../../app/stylesheets/screen.scss */
+#container #post-nav a {
+  display: block;
+  color: #aaaaaa;
+}
+/* line 492, ../../app/stylesheets/screen.scss */
+#container #post-nav a:hover {
+  color: #333333;
+}
+/* line 496, ../../app/stylesheets/screen.scss */
+#container #post-nav a.prev-post-link {
+  display: inline;
+  float: left;
+}
+/* line 500, ../../app/stylesheets/screen.scss */
+#container #post-nav a.next-post-link {
+  display: inline;
+  float: right;
+}
