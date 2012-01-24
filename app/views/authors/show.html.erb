@@ -1,14 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="content">
+  <h1><%= @author.name %>'s Posts</h1>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @author.name %>
-</p>
-
-<p>Posts</p>
-
-<ol>
-<% @author.posts.each do |post| %>
-  <li><%= make_post_link(post) %></li>
+<% @years.each do |year| %>
+  <% (1..12).each do |month| %>
+    <% month_posts = @posts.posts_by_month(year,month) %>
+    <% if month_posts.size > 0 %>
+      <div class="content-sidebar post-index">
+        <div class="sidebar">
+          <strong><%= Date.new(year.to_i,month).strftime("%B %Y") %></strong>
+          <em><%= pluralize(month_posts.size,"post") %></em>
+          <em><%= pluralize(month_posts.collect{|x|x.comments.size}.sum,"comment") %></em>
+        </div>
+        <div class="content">
+          <ul>
+            <% month_posts.each do |post| %>
+              <li>
+                <%= content_tag :span, post.created_at.strftime('%d') %>
+                <%= make_post_link(post) %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
 <% end %>
-</ol>

@@ -7,14 +7,11 @@
 
 <% if show_months %>
   <div id="month-nav-holder">
-    <% @years.each do |year| %>
-      <% year_class = @current_year.to_i === year ? "active" : "not-active" %>
-      <ul class="month-nav <%= year_class %>">
-        <% (1..12).each do |month| %>
-          <% month_class = @current_month.to_i === month && @current_year.to_i === year ? "active" : "not-active" %>
-          <%= content_tag :li, post_month_linker(year,month), :class => month_class %>
-        <% end %>
-      </ul>
-    <% end %>
+    <ul class="month-nav">
+      <% (1..12).each do |month| %>
+        <% month_class = @current_month.to_i === month ? "active" : "not-active" %>
+        <%= content_tag :li, post_month_linker(@current_year.to_i,month), :class => month_class %>
+      <% end %>
+    </ul>
   </div>
 <% end %>
