@@ -5,15 +5,15 @@ class PhlogsController < ApplicationController
   end
   
   def show
-    @phlog = Phlog.find(params[:id])
+    @phlog = Phlog.find_by_o_id(params[:id]) || not_found
   end
   
   def edit
-    @phlog = Phlog.find(params[:id])
+    @phlog = Phlog.find_by_o_id(params[:id])
   end
 
   def update
-    @phlog = Phlog.find(params[:id])
+    @phlog = Phlog.find_by_o_id(params[:id])
   end
   
 end
