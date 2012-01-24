@@ -351,30 +351,70 @@ header nav a:hover {
 /* line 257, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .sidebar {
   text-align: right;
-  font-weight: 900;
 }
-/* line 264, ../../app/stylesheets/screen.scss */
+/* line 260, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .sidebar strong {
+  font-weight: 900;
+  display: block;
+}
+/* line 265, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .sidebar em {
+  font-size: 14px;
+  color: #909090;
+  display: block;
+}
+/* line 273, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .content {
+  padding-bottom: 13px;
+}
+/* line 276, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content h4 {
   color: #aaaaaa;
 }
-/* line 269, ../../app/stylesheets/screen.scss */
+/* line 281, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li {
-  margin: 10px 0;
-  font-size: 18px;
+  margin: 12px 0;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 272, ../../app/stylesheets/screen.scss */
+/* line 285, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li:first-child {
   margin-top: 0;
 }
-/* line 280, ../../app/stylesheets/screen.scss */
+/* line 289, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .content ul li span {
+  display: block;
+  display: inline;
+  float: left;
+  background-color: #dddddd;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 6px 5px;
+  -webkit-border-radius: 2px 2px;
+  -moz-border-radius: 2px / 2px;
+  -o-border-radius: 2px / 2px;
+  -ms-border-radius: 2px / 2px;
+  -khtml-border-radius: 2px / 2px;
+  border-radius: 2px / 2px;
+}
+/* line 299, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .content ul li a {
+  display: inline;
+  float: right;
+  width: 410px;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 2px;
+}
+/* line 312, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index:nth-child(2n) {
   background-color: #f7f7f7;
 }
-/* line 288, ../../app/stylesheets/screen.scss */
+/* line 320, ../../app/stylesheets/screen.scss */
 #container #phlog-list {
   margin-top: 25px;
 }
-/* line 291, ../../app/stylesheets/screen.scss */
+/* line 323, ../../app/stylesheets/screen.scss */
 #container #phlog-list li {
   overflow: hidden;
   *zoom: 1;
@@ -382,19 +422,19 @@ header nav a:hover {
   overflow: hidden;
   margin: 10px 0;
 }
-/* line 297, ../../app/stylesheets/screen.scss */
+/* line 329, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link {
   display: inline;
   float: left;
   width: 180px;
   overflow: hidden;
 }
-/* line 302, ../../app/stylesheets/screen.scss */
+/* line 334, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link img {
   width: 200px;
   margin-left: -15px;
 }
-/* line 309, ../../app/stylesheets/screen.scss */
+/* line 341, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link {
   display: inline;
   float: left;
@@ -402,31 +442,31 @@ header nav a:hover {
   height: 58px;
   padding: 7px 18px 7px 13px;
 }
-/* line 315, ../../app/stylesheets/screen.scss */
+/* line 347, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link strong {
   font-weight: 900;
   display: block;
 }
-/* line 320, ../../app/stylesheets/screen.scss */
+/* line 352, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link em {
   display: block;
   color: gray;
   font-size: 12px;
   margin-top: -2px;
 }
-/* line 331, ../../app/stylesheets/screen.scss */
+/* line 363, ../../app/stylesheets/screen.scss */
 #container #phlog-list li:hover .meta-link {
   background-color: #333333;
   color: #FFF;
 }
-/* line 342, ../../app/stylesheets/screen.scss */
+/* line 374, ../../app/stylesheets/screen.scss */
 #container #year-nav {
   background-color: #333333;
   overflow: hidden;
   *zoom: 1;
-  padding-left: 2px;
+  padding-left: 10px;
 }
-/* line 347, ../../app/stylesheets/screen.scss */
+/* line 379, ../../app/stylesheets/screen.scss */
 #container #year-nav li {
   display: inline;
   float: left;
@@ -434,20 +474,20 @@ header nav a:hover {
   padding: 4px 15px;
   position: relative;
 }
-/* line 355, ../../app/stylesheets/screen.scss */
+/* line 387, ../../app/stylesheets/screen.scss */
 #container #year-nav li.active a {
   color: #FFF;
 }
-/* line 365, ../../app/stylesheets/screen.scss */
+/* line 397, ../../app/stylesheets/screen.scss */
 #container #year-nav:last-child li {
   padding-top: 6px;
 }
-/* line 373, ../../app/stylesheets/screen.scss */
+/* line 405, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
-/* line 377, ../../app/stylesheets/screen.scss */
+/* line 409, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav {
   display: none;
   background-color: #dddddd;
@@ -456,11 +496,11 @@ header nav a:hover {
   top: 0;
   left: 0;
 }
-/* line 385, ../../app/stylesheets/screen.scss */
+/* line 417, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav.active {
   display: block;
 }
-/* line 389, ../../app/stylesheets/screen.scss */
+/* line 421, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -474,11 +514,11 @@ header nav a:hover {
 #container #month-nav-holder .month-nav li {
   *display: inline;
 }
-/* line 394, ../../app/stylesheets/screen.scss */
+/* line 426, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li:first-child {
-  padding-left: 15px;
+  padding-left: 25px;
 }
-/* line 400, ../../app/stylesheets/screen.scss */
+/* line 432, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li.active a {
   color: #333333;
 }

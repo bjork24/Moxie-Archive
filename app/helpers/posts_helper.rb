@@ -12,7 +12,7 @@ module PostsHelper
   end
   
   def make_post_link(post)
-    link_to post.title, "/posts/#{post.o_id}"
+    link_to raw(post.title), "/posts/#{post.o_id}"
   end
   
 end

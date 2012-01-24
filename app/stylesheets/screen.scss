@@ -256,10 +256,22 @@ header {
       
       .sidebar {
         text-align: right;
-        font-weight: 900;
+        
+        strong {
+          font-weight: 900;
+          display: block;
+        }
+        
+        em {
+          font-size: 14px;
+          color: darken($gray,10%);
+          display: block;
+        }
+        
       }
       
       .content {
+        padding-bottom: 13px;
         
         h4 {
           color: $gray;
@@ -267,11 +279,31 @@ header {
         
         ul {
           li {
-            margin: 10px 0;
-            font-size: 18px;
+            margin: 12px 0;
+            @include clearfix;
+            
             &:first-child {
              margin-top: 0; 
             }
+            
+            span {
+              display: block;
+              @include float(left);
+              background-color: $light-gray;
+              font-size: 15px;
+              line-height: 15px;
+              padding: 6px 5px;
+              @include border-radius(2px,2px);
+            }
+            
+            a {
+              @include float(right);
+              width: 410px;
+              font-size: 18px;
+              line-height: 24px;
+              padding-top: 2px;              
+            }
+            
           }
         }
         
@@ -342,7 +374,7 @@ header {
   #year-nav {
     background-color: $black;
     @include clearfix;
-    padding-left: 2px;
+    padding-left: 10px;
     
     li {
       @include float(left);
@@ -372,7 +404,7 @@ header {
   
   #month-nav-holder {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     
     .month-nav {
       display: none;
@@ -392,7 +424,7 @@ header {
         color: $gray;
         
         &:first-child {
-         padding-left: 15px; 
+         padding-left: 25px; 
         }
         
         &.active {
