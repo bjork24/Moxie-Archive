@@ -10,12 +10,14 @@ class PostsController < ApplicationController
     end
     @years = Post.years
     @current_year = params[:year] || @years.first;
+    @current_month = params[:month] || nil
   end
 
   def show
     @post = Post.find_by_o_id(params[:id]) || not_found
     @years = Post.years
     @current_year = @post.created_at.year;
+    @current_month = @post.created_at.month;
   end
   
   # GET /posts/1/edit

@@ -1,4 +1,4 @@
-<%= render "year_nav" %>
+<%= render "year_nav", :show_months => true %>
 
 <div class="content">
   
@@ -7,9 +7,10 @@
 </div>
 
 <% (1..12).each do |month| %>
+  <a name="<%= month %>"></a>
   <div class="post-index content-sidebar">
     <div class="sidebar">
-      <%= Date.new(@current_year.to_i,month).strftime("%B") %>
+      <%= Date.new(@current_year.to_i,month).strftime("%B %Y") %>
     </div>
     <div class="content">
       <% if Post.posts_by_month(@current_year,month).size > 0 %>
@@ -25,4 +26,4 @@
   </div>
 <% end %>
 
-<%= render "year_nav" %>
+<%= render "year_nav", :show_months => false %>

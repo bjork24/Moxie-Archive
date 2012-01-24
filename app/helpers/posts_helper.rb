@@ -4,7 +4,8 @@ module PostsHelper
     month_name = get_month = Date.new(year,month).strftime("%b")
     posts = Post.posts_by_month(year,month).size
     if posts > 0
-      link_to "#{month_name}", "/posts/#{year}/#{month}", :class => "posts#{posts}"
+      link = params[:action].to_s == "index" ? "##{month}" : "/posts/date/#{year}##{month}"
+      link_to "#{month_name}", link
     else
       month_name
     end

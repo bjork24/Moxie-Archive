@@ -255,7 +255,6 @@ header {
     &.post-index {
       
       .sidebar {
-        font-size: 14px;
         text-align: right;
         font-weight: 900;
       }
@@ -361,6 +360,53 @@ header {
       
     }
     
+    &:last-child {
+      
+      li {
+        padding-top: 6px;
+      }
+      
+    }
+    
   }
+  
+  #month-nav-holder {
+    position: relative;
+    margin-bottom: 35px;
+    
+    .month-nav {
+      display: none;
+      background-color: $light-gray;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      &.active {
+        display: block;
+      }
+      
+      li {
+        @include inline-block;
+        padding: 4px 10px;
+        color: $gray;
         
+        &:first-child {
+         padding-left: 15px; 
+        }
+        
+        &.active {
+          
+          a {
+            color: $black;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
+  }
+  
 }
