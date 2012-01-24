@@ -14,7 +14,7 @@ class Post < ActiveRecord::Base
   
   def self.posts_by_month(year,month)
     get_month = Date.new(year.to_i,month.to_i)
-    Post.find(:all, :conditions => ["created_at BETWEEN ? AND ?", get_month, get_month.end_of_month ])
+    Post.find(:all, :conditions => ["created_at BETWEEN ? AND ?", get_month, get_month.at_end_of_month+1 ])
   end
   
 end
