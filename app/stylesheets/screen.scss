@@ -94,6 +94,7 @@ header {
       @include inline-block;
       padding: 7px 10px 6px;
       margin: 0 5px;
+      color: $black;
       
       &:hover {
         color: #FFF;
@@ -110,7 +111,8 @@ header {
 #posts-body #posts-nav,
 #categories-body #posts-nav,
 #phlogs-body #phlogs-nav,
-#guestbooks-body #guestbook-nav {
+#guestbooks-body #guestbook-nav,
+#episodes-body #episode-nav {
   color: #FFF;
   background-color: $black;
   @include border-top-radius(2px);
@@ -154,6 +156,75 @@ header {
       
     }
     
+    &.solo {
+      
+      h1 {
+        margin: 0;
+      }
+      
+    }
+    
+    &.no-bottom {
+      padding-bottom: 0;
+    }
+    
+    .moxie-tv-row {
+      @include clearfix;
+      margin-bottom: 25px;
+      
+      .episode {
+        @include float(left);
+        width: 313px;
+        height: 212px;
+        position: relative;
+        overflow: hidden;
+        
+        img {
+          width: 313px;
+        }
+        
+        &:first-child {
+          margin-right: 24px;
+        }
+        
+        h4 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(#000,0.75);
+          width: 313px;
+          height: 212px;
+          
+          span {
+            display: block;
+            font-size: 30px;
+            line-height: 35px;
+            color: #FFF;
+            padding: 25px;            
+          }
+          
+          small {
+            display: block;
+            color: #AAA;
+            font-weight: 400;
+            padding: 0 25px;
+            margin-top: -25px;
+          }
+          
+        }
+        
+        &:hover {
+          
+          h4 {
+            display: none;
+          }
+          
+        }
+        
+      }
+      
+    }
+    
   }
   
   .post {
@@ -172,6 +243,7 @@ header {
         
         strong {
           display: block;
+          color: $black;
           font-weight: 900;
         }
         
@@ -179,6 +251,24 @@ header {
           font-size: 13px;
         }
         
+      }
+      
+      .credits {
+        margin-top: 15px;
+
+        li {
+          margin: 15px 0;
+          color: lighten($black,20%);
+
+          b {
+            color: $black;
+            display: block;
+            width: 100%;
+            font-weight: 900;
+          }
+
+        }
+
       }
       
     }
@@ -429,6 +519,10 @@ header {
       font-weight: 900;
       padding: 4px 15px;
       position: relative;
+      
+      a {
+        color: darken(#FFF,40%);
+      }
       
       &.active {
         

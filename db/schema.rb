@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120117231255) do
+ActiveRecord::Schema.define(:version => 20120125041118) do
 
   create_table "authors", :force => true do |t|
     t.string   "name"
@@ -36,6 +36,17 @@ ActiveRecord::Schema.define(:version => 20120117231255) do
     t.string   "author"
     t.text     "body"
     t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "episodes", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.text     "embed"
+    t.string   "thumbnail"
+    t.text     "credits"
+    t.string   "backup"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

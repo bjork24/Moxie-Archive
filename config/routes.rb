@@ -1,5 +1,7 @@
 Moxie::Application.routes.draw do
 
+  resources :episodes
+
   get "pages/home"
   get "pages/about"
 
