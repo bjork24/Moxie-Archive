@@ -133,10 +133,16 @@ header {
     h1 {
       font-size: 40px;
       line-height: 45px;
+      margin: 25px 0;
       @include text-shadow(
         $light-gray 1px 1px 0,
         $light-gray 2px 2px 0,
         $light-gray 3px 3px 0);
+      
+      &:first-child {
+        margin-top: 0;
+      }
+      
     }
     
     p {
@@ -286,6 +292,7 @@ header {
         }
         
         ul {
+          
           li {
             margin: 12px 0;
             @include clearfix;

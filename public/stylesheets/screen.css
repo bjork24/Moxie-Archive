@@ -244,152 +244,157 @@ header nav a:hover {
 #container .content h1 {
   font-size: 40px;
   line-height: 45px;
+  margin: 25px 0;
   text-shadow: #dddddd 1px 1px 0, #dddddd 2px 2px 0, #dddddd 3px 3px 0;
 }
 /* line 142, ../../app/stylesheets/screen.scss */
+#container .content h1:first-child {
+  margin-top: 0;
+}
+/* line 148, ../../app/stylesheets/screen.scss */
 #container .content p {
   margin-top: 25px;
 }
-/* line 145, ../../app/stylesheets/screen.scss */
+/* line 151, ../../app/stylesheets/screen.scss */
 #container .content p:first-child {
   margin-top: 0;
 }
-/* line 155, ../../app/stylesheets/screen.scss */
+/* line 161, ../../app/stylesheets/screen.scss */
 #container .post .sidebar {
   font-size: 14px;
   color: #737373;
   text-align: right;
 }
-/* line 160, ../../app/stylesheets/screen.scss */
+/* line 166, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p {
   margin-top: 25px;
 }
-/* line 163, ../../app/stylesheets/screen.scss */
+/* line 169, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p:first-child {
   margin-top: 0;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 173, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p strong {
   display: block;
   font-weight: 900;
 }
-/* line 172, ../../app/stylesheets/screen.scss */
+/* line 178, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p em {
   font-size: 13px;
 }
-/* line 180, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 #container .post .content {
   padding-bottom: 35px;
 }
-/* line 183, ../../app/stylesheets/screen.scss */
+/* line 189, ../../app/stylesheets/screen.scss */
 #container .post .content h1 {
   width: 80%;
 }
-/* line 191, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 #container .comments {
   background-color: #dddddd;
 }
-/* line 194, ../../app/stylesheets/screen.scss */
+/* line 200, ../../app/stylesheets/screen.scss */
 #container .comments h3 {
   background-color: #333333;
   color: #FFF;
   padding: 10px 20px;
   font-size: 20px;
 }
-/* line 201, ../../app/stylesheets/screen.scss */
+/* line 207, ../../app/stylesheets/screen.scss */
 #container .comments .comment {
   border-top: 1px solid #c4c4c4;
 }
-/* line 204, ../../app/stylesheets/screen.scss */
+/* line 210, ../../app/stylesheets/screen.scss */
 #container .comments .comment:hover {
   background-color: #eaeaea;
 }
-/* line 208, ../../app/stylesheets/screen.scss */
+/* line 214, ../../app/stylesheets/screen.scss */
 #container .comments .comment.moderator {
   border-left: 4px solid #dc0000;
 }
-/* line 212, ../../app/stylesheets/screen.scss */
+/* line 218, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar {
   color: #666;
   text-align: right;
 }
-/* line 216, ../../app/stylesheets/screen.scss */
+/* line 222, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar strong {
   font-weight: 900;
   color: #444;
   display: block;
   font-size: 14px;
 }
-/* line 223, ../../app/stylesheets/screen.scss */
+/* line 229, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar em {
   font-size: 12px;
 }
-/* line 233, ../../app/stylesheets/screen.scss */
+/* line 239, ../../app/stylesheets/screen.scss */
 #container .content-sidebar {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 236, ../../app/stylesheets/screen.scss */
+/* line 242, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .sidebar {
   display: inline;
   float: left;
   width: 150px;
   padding: 25px;
 }
-/* line 242, ../../app/stylesheets/screen.scss */
+/* line 248, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content {
   display: inline;
   float: left;
   width: 445px;
 }
-/* line 246, ../../app/stylesheets/screen.scss */
+/* line 252, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img {
   border: 1px solid #dddddd;
   padding: 10px;
   margin-top: 25px;
 }
-/* line 251, ../../app/stylesheets/screen.scss */
+/* line 257, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img:first-child {
   margin-top: 0;
 }
-/* line 257, ../../app/stylesheets/screen.scss */
+/* line 263, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content h1 {
   margin-top: -5px;
 }
-/* line 265, ../../app/stylesheets/screen.scss */
+/* line 271, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .sidebar {
   text-align: right;
 }
-/* line 268, ../../app/stylesheets/screen.scss */
+/* line 274, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .sidebar strong {
   font-weight: 900;
   display: block;
 }
-/* line 273, ../../app/stylesheets/screen.scss */
+/* line 279, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .sidebar em {
   font-size: 14px;
   color: #909090;
   display: block;
 }
-/* line 281, ../../app/stylesheets/screen.scss */
+/* line 287, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content {
   padding-bottom: 13px;
 }
-/* line 284, ../../app/stylesheets/screen.scss */
+/* line 290, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content h4 {
   color: #aaaaaa;
 }
-/* line 289, ../../app/stylesheets/screen.scss */
+/* line 296, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li {
   margin: 12px 0;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 293, ../../app/stylesheets/screen.scss */
+/* line 300, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li:first-child {
   margin-top: 0;
 }
-/* line 297, ../../app/stylesheets/screen.scss */
+/* line 304, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li span {
   display: block;
   display: inline;
@@ -405,7 +410,7 @@ header nav a:hover {
   -khtml-border-radius: 2px / 2px;
   border-radius: 2px / 2px;
 }
-/* line 307, ../../app/stylesheets/screen.scss */
+/* line 314, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li a {
   display: inline;
   float: right;
@@ -414,42 +419,42 @@ header nav a:hover {
   line-height: 24px;
   padding-top: 2px;
 }
-/* line 320, ../../app/stylesheets/screen.scss */
+/* line 327, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index:nth-child(2n) {
   background-color: #f7f7f7;
 }
-/* line 328, ../../app/stylesheets/screen.scss */
+/* line 335, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .sidebar {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 332, ../../app/stylesheets/screen.scss */
+/* line 339, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .sidebar img {
   border: 1px solid #dddddd;
 }
-/* line 338, ../../app/stylesheets/screen.scss */
+/* line 345, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 342, ../../app/stylesheets/screen.scss */
+/* line 349, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content h3 {
   font-size: 20px;
 }
-/* line 346, ../../app/stylesheets/screen.scss */
+/* line 353, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content em {
   font-size: 14px;
   color: #666666;
 }
-/* line 353, ../../app/stylesheets/screen.scss */
+/* line 360, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index:nth-child(2n) {
   background-color: #f7f7f7;
 }
-/* line 361, ../../app/stylesheets/screen.scss */
+/* line 368, ../../app/stylesheets/screen.scss */
 #container #phlog-list {
   margin-top: 25px;
 }
-/* line 364, ../../app/stylesheets/screen.scss */
+/* line 371, ../../app/stylesheets/screen.scss */
 #container #phlog-list li {
   overflow: hidden;
   *zoom: 1;
@@ -457,19 +462,19 @@ header nav a:hover {
   overflow: hidden;
   margin: 10px 0;
 }
-/* line 370, ../../app/stylesheets/screen.scss */
+/* line 377, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link {
   display: inline;
   float: left;
   width: 180px;
   overflow: hidden;
 }
-/* line 375, ../../app/stylesheets/screen.scss */
+/* line 382, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link img {
   width: 200px;
   margin-left: -15px;
 }
-/* line 382, ../../app/stylesheets/screen.scss */
+/* line 389, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link {
   display: inline;
   float: left;
@@ -477,31 +482,31 @@ header nav a:hover {
   height: 58px;
   padding: 7px 18px 7px 13px;
 }
-/* line 388, ../../app/stylesheets/screen.scss */
+/* line 395, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link strong {
   font-weight: 900;
   display: block;
 }
-/* line 393, ../../app/stylesheets/screen.scss */
+/* line 400, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link em {
   display: block;
   color: gray;
   font-size: 12px;
   margin-top: -2px;
 }
-/* line 404, ../../app/stylesheets/screen.scss */
+/* line 411, ../../app/stylesheets/screen.scss */
 #container #phlog-list li:hover .meta-link {
   background-color: #333333;
   color: #FFF;
 }
-/* line 415, ../../app/stylesheets/screen.scss */
+/* line 422, ../../app/stylesheets/screen.scss */
 #container #year-nav {
   background-color: #333333;
   overflow: hidden;
   *zoom: 1;
   padding-left: 10px;
 }
-/* line 420, ../../app/stylesheets/screen.scss */
+/* line 427, ../../app/stylesheets/screen.scss */
 #container #year-nav li {
   display: inline;
   float: left;
@@ -509,20 +514,20 @@ header nav a:hover {
   padding: 4px 15px;
   position: relative;
 }
-/* line 428, ../../app/stylesheets/screen.scss */
+/* line 435, ../../app/stylesheets/screen.scss */
 #container #year-nav li.active a {
   color: #FFF;
 }
-/* line 438, ../../app/stylesheets/screen.scss */
+/* line 445, ../../app/stylesheets/screen.scss */
 #container #year-nav:last-child li {
   padding-top: 6px;
 }
-/* line 446, ../../app/stylesheets/screen.scss */
+/* line 453, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 450, ../../app/stylesheets/screen.scss */
+/* line 457, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav {
   background-color: #dddddd;
   width: 100%;
@@ -530,11 +535,11 @@ header nav a:hover {
   top: 0;
   left: 0;
 }
-/* line 457, ../../app/stylesheets/screen.scss */
+/* line 464, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav.active {
   display: block;
 }
-/* line 461, ../../app/stylesheets/screen.scss */
+/* line 468, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -548,35 +553,35 @@ header nav a:hover {
 #container #month-nav-holder .month-nav li {
   *display: inline;
 }
-/* line 466, ../../app/stylesheets/screen.scss */
+/* line 473, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li:first-child {
   padding-left: 25px;
 }
-/* line 472, ../../app/stylesheets/screen.scss */
+/* line 479, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li.active a {
   color: #333333;
 }
-/* line 484, ../../app/stylesheets/screen.scss */
+/* line 491, ../../app/stylesheets/screen.scss */
 #container #post-nav {
   overflow: hidden;
   *zoom: 1;
   padding: 10px 20px;
 }
-/* line 488, ../../app/stylesheets/screen.scss */
+/* line 495, ../../app/stylesheets/screen.scss */
 #container #post-nav a {
   display: block;
   color: #aaaaaa;
 }
-/* line 492, ../../app/stylesheets/screen.scss */
+/* line 499, ../../app/stylesheets/screen.scss */
 #container #post-nav a:hover {
   color: #333333;
 }
-/* line 496, ../../app/stylesheets/screen.scss */
+/* line 503, ../../app/stylesheets/screen.scss */
 #container #post-nav a.prev-post-link {
   display: inline;
   float: left;
 }
-/* line 500, ../../app/stylesheets/screen.scss */
+/* line 507, ../../app/stylesheets/screen.scss */
 #container #post-nav a.next-post-link {
   display: inline;
   float: right;
