@@ -35,7 +35,7 @@ html,body {
   i {
     font-style: italic;
   }
-  
+    
 }
 
 header {
@@ -158,6 +158,23 @@ header {
       
       &:first-child {
         margin-top: 0;
+      }
+      
+    }
+    
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    ul, ol {
+      margin-left: 25px;
+      
+      li {
+        
       }
       
     }

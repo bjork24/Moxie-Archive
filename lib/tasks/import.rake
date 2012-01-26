@@ -48,7 +48,7 @@ namespace :import do
       end
       @body = p.body.gsub('href="/moxie/post/','href="/posts/')
       @body = @body.gsub('src="/moxie/pix/','src="http://moxie.danchilton.com/pix/')
-      @body = @body.gsub('href="pix/','href="http://moxie.danchilton.com/pix')
+      @body = @body.gsub('href="pix/','href="http://moxie.danchilton.com/pix/')
       @body = @body.gsub('href="/moxie/pix/','href="http://moxie.danchilton.com/pix/')
       post = Post.create(
         :o_id => p.id,
