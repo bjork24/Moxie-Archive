@@ -16,10 +16,6 @@ html,body {
     text-decoration: none;
     color: $red;
     
-    &:hover {
-      color: darken($red, 10%);
-    }
-    
     &.broken {
       color: lighten($red, 20%);
       border-bottom: 1px dotted lighten($red, 40%);
@@ -136,6 +132,14 @@ header {
   
   .content {
     padding: 25px;
+    
+    a {
+      
+      &:hover {
+        text-decoration: underline;
+      }
+      
+    }
     
     h1 {
       font-size: 40px;
