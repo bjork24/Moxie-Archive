@@ -94,16 +94,21 @@ html a, body a {
   text-decoration: none;
   color: #dc0000;
 }
-/* line 25, ../../app/stylesheets/screen.scss */
+/* line 24, ../../app/stylesheets/screen.scss */
+html a.broken, body a.broken {
+  color: #ff4343;
+  border-bottom: 1px dotted #ffa9a9;
+}
+/* line 31, ../../app/stylesheets/screen.scss */
 html b, body b {
   font-weight: 900;
 }
-/* line 29, ../../app/stylesheets/screen.scss */
+/* line 35, ../../app/stylesheets/screen.scss */
 html i, body i {
   font-style: italic;
 }
 
-/* line 35, ../../app/stylesheets/screen.scss */
+/* line 41, ../../app/stylesheets/screen.scss */
 header {
   margin: 0 auto;
   width: 700px;
@@ -112,7 +117,7 @@ header {
   margin-left: -350px;
   z-index: 1;
 }
-/* line 42, ../../app/stylesheets/screen.scss */
+/* line 48, ../../app/stylesheets/screen.scss */
 header h1 {
   font-size: 170px;
   line-height: 170px;
@@ -133,7 +138,7 @@ header h1 {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 61, ../../app/stylesheets/screen.scss */
+/* line 67, ../../app/stylesheets/screen.scss */
 header h1 a {
   color: #333333;
   display: block;
@@ -141,7 +146,7 @@ header h1 a {
   text-decoration: none;
   background-color: transparent;
 }
-/* line 69, ../../app/stylesheets/screen.scss */
+/* line 75, ../../app/stylesheets/screen.scss */
 header h1:hover {
   text-shadow: #dc0000 1px 1px 0, #dc0000 2px 2px 0, #dc0000 3px 3px 0, #dc0000 4px 4px 0, #dc0000 5px 5px 0, #dc0000 6px 6px 0, #dc0000 7px 7px 0, #dc0000 8px 8px 0;
   letter-spacing: 12px;
@@ -158,14 +163,14 @@ header h1:hover {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 87, ../../app/stylesheets/screen.scss */
+/* line 93, ../../app/stylesheets/screen.scss */
 header nav {
   font-family: "Paytone One", sans-serif;
   text-transform: uppercase;
   text-align: right;
   padding-right: 25px;
 }
-/* line 93, ../../app/stylesheets/screen.scss */
+/* line 99, ../../app/stylesheets/screen.scss */
 header nav a {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -180,7 +185,7 @@ header nav a {
 header nav a {
   *display: inline;
 }
-/* line 99, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 header nav a:hover {
   color: #FFF;
   background-color: #333333;
@@ -198,7 +203,7 @@ header nav a:hover {
   border-top-right-radius: 2px;
 }
 
-/* line 115, ../../app/stylesheets/screen.scss */
+/* line 121, ../../app/stylesheets/screen.scss */
 #posts-body #posts-nav,
 #categories-body #posts-nav,
 #phlogs-body #phlogs-nav,
@@ -220,7 +225,7 @@ header nav a:hover {
   border-top-right-radius: 2px;
 }
 
-/* line 121, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 #container {
   margin: 0 auto;
   width: 700px;
@@ -238,44 +243,44 @@ header nav a:hover {
   top: 235px;
   margin-bottom: 260px;
 }
-/* line 132, ../../app/stylesheets/screen.scss */
+/* line 138, ../../app/stylesheets/screen.scss */
 #container .content {
   padding: 25px;
 }
-/* line 135, ../../app/stylesheets/screen.scss */
+/* line 141, ../../app/stylesheets/screen.scss */
 #container .content h1 {
   font-size: 40px;
   line-height: 45px;
   margin: 25px 0;
   text-shadow: #dddddd 1px 1px 0, #dddddd 2px 2px 0, #dddddd 3px 3px 0;
 }
-/* line 144, ../../app/stylesheets/screen.scss */
+/* line 150, ../../app/stylesheets/screen.scss */
 #container .content h1:first-child {
   margin-top: 0;
 }
-/* line 150, ../../app/stylesheets/screen.scss */
+/* line 156, ../../app/stylesheets/screen.scss */
 #container .content p {
   margin-top: 25px;
 }
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 159, ../../app/stylesheets/screen.scss */
 #container .content p:first-child {
   margin-top: 0;
 }
-/* line 161, ../../app/stylesheets/screen.scss */
+/* line 167, ../../app/stylesheets/screen.scss */
 #container .content.solo h1 {
   margin: 0;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 173, ../../app/stylesheets/screen.scss */
 #container .content.no-bottom {
   padding-bottom: 0;
 }
-/* line 171, ../../app/stylesheets/screen.scss */
+/* line 177, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row {
   overflow: hidden;
   *zoom: 1;
   margin-bottom: 25px;
 }
-/* line 175, ../../app/stylesheets/screen.scss */
+/* line 181, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row .episode {
   display: inline;
   float: left;
@@ -284,15 +289,15 @@ header nav a:hover {
   position: relative;
   overflow: hidden;
 }
-/* line 182, ../../app/stylesheets/screen.scss */
+/* line 188, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row .episode img {
   width: 313px;
 }
-/* line 186, ../../app/stylesheets/screen.scss */
+/* line 192, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row .episode:first-child {
   margin-right: 24px;
 }
-/* line 190, ../../app/stylesheets/screen.scss */
+/* line 196, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row .episode h4 {
   position: absolute;
   top: 0;
@@ -301,7 +306,7 @@ header nav a:hover {
   width: 313px;
   height: 212px;
 }
-/* line 198, ../../app/stylesheets/screen.scss */
+/* line 204, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row .episode h4 span {
   display: block;
   font-size: 30px;
@@ -309,7 +314,7 @@ header nav a:hover {
   color: #FFF;
   padding: 25px;
 }
-/* line 206, ../../app/stylesheets/screen.scss */
+/* line 212, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row .episode h4 small {
   display: block;
   color: #AAA;
@@ -317,163 +322,163 @@ header nav a:hover {
   padding: 0 25px;
   margin-top: -25px;
 }
-/* line 218, ../../app/stylesheets/screen.scss */
+/* line 224, ../../app/stylesheets/screen.scss */
 #container .content .moxie-tv-row .episode:hover h4 {
   display: none;
 }
-/* line 232, ../../app/stylesheets/screen.scss */
+/* line 238, ../../app/stylesheets/screen.scss */
 #container .post .sidebar {
   font-size: 14px;
   color: #737373;
   text-align: right;
 }
-/* line 237, ../../app/stylesheets/screen.scss */
+/* line 243, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p {
   margin-top: 25px;
 }
-/* line 240, ../../app/stylesheets/screen.scss */
+/* line 246, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p:first-child {
   margin-top: 0;
 }
-/* line 244, ../../app/stylesheets/screen.scss */
+/* line 250, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p strong {
   display: block;
   color: #333333;
   font-weight: 900;
 }
-/* line 250, ../../app/stylesheets/screen.scss */
+/* line 256, ../../app/stylesheets/screen.scss */
 #container .post .sidebar p em {
   font-size: 13px;
 }
-/* line 256, ../../app/stylesheets/screen.scss */
+/* line 262, ../../app/stylesheets/screen.scss */
 #container .post .sidebar .credits {
   margin-top: 15px;
 }
-/* line 259, ../../app/stylesheets/screen.scss */
+/* line 265, ../../app/stylesheets/screen.scss */
 #container .post .sidebar .credits li {
   margin: 15px 0;
   color: #666666;
 }
-/* line 263, ../../app/stylesheets/screen.scss */
+/* line 269, ../../app/stylesheets/screen.scss */
 #container .post .sidebar .credits li b {
   color: #333333;
   display: block;
   width: 100%;
   font-weight: 900;
 }
-/* line 276, ../../app/stylesheets/screen.scss */
+/* line 282, ../../app/stylesheets/screen.scss */
 #container .post .content {
   padding-bottom: 35px;
 }
-/* line 279, ../../app/stylesheets/screen.scss */
+/* line 285, ../../app/stylesheets/screen.scss */
 #container .post .content h1 {
   width: 80%;
 }
-/* line 287, ../../app/stylesheets/screen.scss */
+/* line 293, ../../app/stylesheets/screen.scss */
 #container .comments {
   background-color: #dddddd;
 }
-/* line 290, ../../app/stylesheets/screen.scss */
+/* line 296, ../../app/stylesheets/screen.scss */
 #container .comments h3 {
   background-color: #333333;
   color: #FFF;
   padding: 10px 20px;
   font-size: 20px;
 }
-/* line 297, ../../app/stylesheets/screen.scss */
+/* line 303, ../../app/stylesheets/screen.scss */
 #container .comments .comment {
   border-top: 1px solid #c4c4c4;
 }
-/* line 300, ../../app/stylesheets/screen.scss */
+/* line 306, ../../app/stylesheets/screen.scss */
 #container .comments .comment:hover {
   background-color: #eaeaea;
 }
-/* line 304, ../../app/stylesheets/screen.scss */
+/* line 310, ../../app/stylesheets/screen.scss */
 #container .comments .comment.moderator {
   border-left: 4px solid #dc0000;
 }
-/* line 308, ../../app/stylesheets/screen.scss */
+/* line 314, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar {
   color: #666;
   text-align: right;
 }
-/* line 312, ../../app/stylesheets/screen.scss */
+/* line 318, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar strong {
   font-weight: 900;
   color: #444;
   display: block;
   font-size: 14px;
 }
-/* line 319, ../../app/stylesheets/screen.scss */
+/* line 325, ../../app/stylesheets/screen.scss */
 #container .comments .comment .sidebar em {
   font-size: 12px;
 }
-/* line 329, ../../app/stylesheets/screen.scss */
+/* line 335, ../../app/stylesheets/screen.scss */
 #container .content-sidebar {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 332, ../../app/stylesheets/screen.scss */
+/* line 338, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .sidebar {
   display: inline;
   float: left;
   width: 150px;
   padding: 25px;
 }
-/* line 338, ../../app/stylesheets/screen.scss */
+/* line 344, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content {
   display: inline;
   float: left;
   width: 445px;
 }
-/* line 342, ../../app/stylesheets/screen.scss */
+/* line 348, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img {
   border: 1px solid #dddddd;
   padding: 10px;
   margin-top: 25px;
 }
-/* line 347, ../../app/stylesheets/screen.scss */
+/* line 353, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content img:first-child {
   margin-top: 0;
 }
-/* line 353, ../../app/stylesheets/screen.scss */
+/* line 359, ../../app/stylesheets/screen.scss */
 #container .content-sidebar .content h1 {
   margin-top: -5px;
 }
-/* line 361, ../../app/stylesheets/screen.scss */
+/* line 367, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .sidebar {
   text-align: right;
 }
-/* line 364, ../../app/stylesheets/screen.scss */
+/* line 370, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .sidebar strong {
   font-weight: 900;
   display: block;
 }
-/* line 369, ../../app/stylesheets/screen.scss */
+/* line 375, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .sidebar em {
   font-size: 14px;
   color: #909090;
   display: block;
 }
-/* line 377, ../../app/stylesheets/screen.scss */
+/* line 383, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content {
   padding-bottom: 13px;
 }
-/* line 380, ../../app/stylesheets/screen.scss */
+/* line 386, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content h4 {
   color: #aaaaaa;
 }
-/* line 386, ../../app/stylesheets/screen.scss */
+/* line 392, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li {
   margin: 12px 0;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 390, ../../app/stylesheets/screen.scss */
+/* line 396, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li:first-child {
   margin-top: 0;
 }
-/* line 394, ../../app/stylesheets/screen.scss */
+/* line 400, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li span {
   display: block;
   display: inline;
@@ -489,7 +494,7 @@ header nav a:hover {
   -khtml-border-radius: 2px / 2px;
   border-radius: 2px / 2px;
 }
-/* line 404, ../../app/stylesheets/screen.scss */
+/* line 410, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index .content ul li a {
   display: inline;
   float: right;
@@ -498,42 +503,42 @@ header nav a:hover {
   line-height: 24px;
   padding-top: 2px;
 }
-/* line 417, ../../app/stylesheets/screen.scss */
+/* line 423, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index:nth-child(2n) {
   background-color: #f7f7f7;
 }
-/* line 425, ../../app/stylesheets/screen.scss */
+/* line 431, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .sidebar {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 429, ../../app/stylesheets/screen.scss */
+/* line 435, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .sidebar img {
   border: 1px solid #dddddd;
 }
-/* line 435, ../../app/stylesheets/screen.scss */
+/* line 441, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 439, ../../app/stylesheets/screen.scss */
+/* line 445, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content h3 {
   font-size: 20px;
 }
-/* line 443, ../../app/stylesheets/screen.scss */
+/* line 449, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content em {
   font-size: 14px;
   color: #666666;
 }
-/* line 450, ../../app/stylesheets/screen.scss */
+/* line 456, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index:nth-child(2n) {
   background-color: #f7f7f7;
 }
-/* line 458, ../../app/stylesheets/screen.scss */
+/* line 464, ../../app/stylesheets/screen.scss */
 #container #phlog-list {
   margin-top: 25px;
 }
-/* line 461, ../../app/stylesheets/screen.scss */
+/* line 467, ../../app/stylesheets/screen.scss */
 #container #phlog-list li {
   overflow: hidden;
   *zoom: 1;
@@ -541,19 +546,19 @@ header nav a:hover {
   overflow: hidden;
   margin: 10px 0;
 }
-/* line 467, ../../app/stylesheets/screen.scss */
+/* line 473, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link {
   display: inline;
   float: left;
   width: 180px;
   overflow: hidden;
 }
-/* line 472, ../../app/stylesheets/screen.scss */
+/* line 478, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link img {
   width: 200px;
   margin-left: -15px;
 }
-/* line 479, ../../app/stylesheets/screen.scss */
+/* line 485, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link {
   display: inline;
   float: left;
@@ -561,31 +566,31 @@ header nav a:hover {
   height: 58px;
   padding: 7px 18px 7px 13px;
 }
-/* line 485, ../../app/stylesheets/screen.scss */
+/* line 491, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link strong {
   font-weight: 900;
   display: block;
 }
-/* line 490, ../../app/stylesheets/screen.scss */
+/* line 496, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link em {
   display: block;
   color: gray;
   font-size: 12px;
   margin-top: -2px;
 }
-/* line 501, ../../app/stylesheets/screen.scss */
+/* line 507, ../../app/stylesheets/screen.scss */
 #container #phlog-list li:hover .meta-link {
   background-color: #333333;
   color: #FFF;
 }
-/* line 512, ../../app/stylesheets/screen.scss */
+/* line 518, ../../app/stylesheets/screen.scss */
 #container #year-nav {
   background-color: #333333;
   overflow: hidden;
   *zoom: 1;
   padding-left: 10px;
 }
-/* line 517, ../../app/stylesheets/screen.scss */
+/* line 523, ../../app/stylesheets/screen.scss */
 #container #year-nav li {
   display: inline;
   float: left;
@@ -593,24 +598,24 @@ header nav a:hover {
   padding: 4px 15px;
   position: relative;
 }
-/* line 523, ../../app/stylesheets/screen.scss */
+/* line 529, ../../app/stylesheets/screen.scss */
 #container #year-nav li a {
   color: #999999;
 }
-/* line 529, ../../app/stylesheets/screen.scss */
+/* line 535, ../../app/stylesheets/screen.scss */
 #container #year-nav li.active a {
   color: #FFF;
 }
-/* line 539, ../../app/stylesheets/screen.scss */
+/* line 545, ../../app/stylesheets/screen.scss */
 #container #year-nav:last-child li {
   padding-top: 6px;
 }
-/* line 547, ../../app/stylesheets/screen.scss */
+/* line 553, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 551, ../../app/stylesheets/screen.scss */
+/* line 557, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav {
   background-color: #dddddd;
   width: 100%;
@@ -618,11 +623,11 @@ header nav a:hover {
   top: 0;
   left: 0;
 }
-/* line 558, ../../app/stylesheets/screen.scss */
+/* line 564, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav.active {
   display: block;
 }
-/* line 562, ../../app/stylesheets/screen.scss */
+/* line 568, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -636,35 +641,35 @@ header nav a:hover {
 #container #month-nav-holder .month-nav li {
   *display: inline;
 }
-/* line 567, ../../app/stylesheets/screen.scss */
+/* line 573, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li:first-child {
   padding-left: 25px;
 }
-/* line 573, ../../app/stylesheets/screen.scss */
+/* line 579, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li.active a {
   color: #333333;
 }
-/* line 585, ../../app/stylesheets/screen.scss */
+/* line 591, ../../app/stylesheets/screen.scss */
 #container #post-nav {
   overflow: hidden;
   *zoom: 1;
   padding: 10px 20px;
 }
-/* line 589, ../../app/stylesheets/screen.scss */
+/* line 595, ../../app/stylesheets/screen.scss */
 #container #post-nav a {
   display: block;
   color: #aaaaaa;
 }
-/* line 593, ../../app/stylesheets/screen.scss */
+/* line 599, ../../app/stylesheets/screen.scss */
 #container #post-nav a:hover {
   color: #333333;
 }
-/* line 597, ../../app/stylesheets/screen.scss */
+/* line 603, ../../app/stylesheets/screen.scss */
 #container #post-nav a.prev-post-link {
   display: inline;
   float: left;
 }
-/* line 601, ../../app/stylesheets/screen.scss */
+/* line 607, ../../app/stylesheets/screen.scss */
 #container #post-nav a.next-post-link {
   display: inline;
   float: right;

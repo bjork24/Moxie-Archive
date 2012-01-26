@@ -20,6 +20,12 @@ html,body {
   a {
     text-decoration: none;
     color: $red;
+    
+    &.broken {
+      color: lighten($red, 20%);
+      border-bottom: 1px dotted lighten($red, 40%);
+    }
+    
   }
   
   b {
