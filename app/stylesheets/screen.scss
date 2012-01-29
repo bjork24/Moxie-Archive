@@ -113,7 +113,8 @@ header {
 #categories-body #posts-nav,
 #phlogs-body #phlogs-nav,
 #guestbooks-body #guestbook-nav,
-#episodes-body #episode-nav {
+#episodes-body #episode-nav,
+#pages-body.about #about-nav {
   color: #FFF;
   background-color: $black;
   @include border-top-radius(2px);
