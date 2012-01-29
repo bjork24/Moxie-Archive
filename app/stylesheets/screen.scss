@@ -19,6 +19,11 @@ html,body {
     &.broken {
       color: lighten($red, 20%);
       border-bottom: 1px dotted lighten($red, 40%);
+      
+      &:hover {
+        text-decoration: none !important;
+      }
+      
     }
     
   }
@@ -363,7 +368,7 @@ header {
     }
 
     .content {
-      @include float(left);
+      @include float(right);
       width: 445px;
       
       img {

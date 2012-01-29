@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content solo">
   <h1><%= @author.name %>'s Posts</h1>
 </div>
 
@@ -7,11 +7,6 @@
     <% month_posts = @posts.posts_by_month(year,month) %>
     <% if month_posts.size > 0 %>
       <div class="content-sidebar post-index">
-        <div class="sidebar">
-          <strong><%= Date.new(year.to_i,month).strftime("%B %Y") %></strong>
-          <em><%= pluralize(month_posts.size,"post") %></em>
-          <em><%= pluralize(month_posts.collect{|x|x.comments.size}.sum,"comment") %></em>
-        </div>
         <div class="content">
           <ul>
             <% month_posts.each do |post| %>
@@ -21,6 +16,11 @@
               </li>
             <% end %>
           </ul>
+        </div>
+        <div class="sidebar">
+          <strong><%= Date.new(year.to_i,month).strftime("%B %Y") %></strong>
+          <em><%= pluralize(month_posts.size,"post") %></em>
+          <em><%= pluralize(month_posts.collect{|x|x.comments.size}.sum,"comment") %></em>
         </div>
       </div>
     <% end %>
