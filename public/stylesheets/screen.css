@@ -696,9 +696,10 @@ header nav a:hover {
   float: right;
 }
 
+/*
 @media screen and (max-width: 700px) {
-  /* line 645, ../../app/stylesheets/screen.scss */
   body {
     display: none;
   }
 }
+*/
