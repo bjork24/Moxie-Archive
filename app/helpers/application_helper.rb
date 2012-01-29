@@ -28,4 +28,9 @@ module ApplicationHelper
     end
   end
   
+  def page_title
+    base_title = "The Moxie Blog Archive"
+    return !@title.present? ? base_title : "#{base_title} | #{@title}" 
+  end
+  
 end

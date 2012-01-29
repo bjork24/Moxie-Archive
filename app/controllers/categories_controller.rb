@@ -4,6 +4,7 @@ class CategoriesController < ApplicationController
     @category = Category.find_by_id(params[:id]) || not_found
     @posts = @category.posts
     @years = @posts.years
+    @title = "#{@category.name} category"
   end
   
 end

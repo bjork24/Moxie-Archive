@@ -9,6 +9,7 @@ class PostsController < ApplicationController
     @years = Post.years
     @current_year = params[:year] || @years.first;
     @current_month = params[:month] || nil
+    @title = "Posts"
   end
 
   def show
@@ -16,6 +17,7 @@ class PostsController < ApplicationController
     @years = Post.years
     @current_year = @post.created_at.year;
     @current_month = @post.created_at.month;
+    @title = @post.title
   end
   
 end
