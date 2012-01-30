@@ -22,7 +22,7 @@
             <% month_posts.each do |post| %>
               <li>
                 <%= content_tag :span, post.created_at.strftime('%d') %>
-                <%= link_to raw(post.title), make_post_link(post) %>
+                <%= link_to raw("#{post.title} <small>#{post.comments.size}</small>"), make_post_link(post) %>
               </li>
             <% end %>
           </ul>

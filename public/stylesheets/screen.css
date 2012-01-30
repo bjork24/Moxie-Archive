@@ -524,42 +524,59 @@ header nav a:hover {
   line-height: 24px;
   padding-top: 2px;
 }
-/* line 450, ../../app/stylesheets/screen.scss */
+/* line 444, ../../app/stylesheets/screen.scss */
+#container .content-sidebar.post-index .content ul li a small {
+  background: transparent url("/images/comment.gif") no-repeat 0 7px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 0 0 0 15px;
+  margin-left: 5px;
+  font-size: 11px;
+  color: #aaaaaa;
+}
+/* line 7, ../../../../../../.rvm/gems/ruby-1.9.2-p290@moxie/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#container .content-sidebar.post-index .content ul li a small {
+  *display: inline;
+}
+/* line 460, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.post-index:nth-child(2n) {
   background-color: #f7f7f7;
 }
-/* line 458, ../../app/stylesheets/screen.scss */
+/* line 468, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .sidebar {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 462, ../../app/stylesheets/screen.scss */
+/* line 472, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .sidebar img {
   border: 1px solid #dddddd;
 }
-/* line 468, ../../app/stylesheets/screen.scss */
+/* line 478, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 472, ../../app/stylesheets/screen.scss */
+/* line 482, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content h3 {
   font-size: 20px;
 }
-/* line 476, ../../app/stylesheets/screen.scss */
+/* line 486, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index .content em {
   font-size: 14px;
   color: #666666;
 }
-/* line 483, ../../app/stylesheets/screen.scss */
+/* line 493, ../../app/stylesheets/screen.scss */
 #container .content-sidebar.phlog-index:nth-child(2n) {
   background-color: #f7f7f7;
 }
-/* line 491, ../../app/stylesheets/screen.scss */
+/* line 501, ../../app/stylesheets/screen.scss */
 #container #phlog-list {
   margin-top: 25px;
 }
-/* line 494, ../../app/stylesheets/screen.scss */
+/* line 504, ../../app/stylesheets/screen.scss */
 #container #phlog-list li {
   overflow: hidden;
   *zoom: 1;
@@ -567,19 +584,19 @@ header nav a:hover {
   overflow: hidden;
   margin: 10px 0;
 }
-/* line 500, ../../app/stylesheets/screen.scss */
+/* line 510, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link {
   display: inline;
   float: left;
   width: 180px;
   overflow: hidden;
 }
-/* line 505, ../../app/stylesheets/screen.scss */
+/* line 515, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .image-link img {
   width: 200px;
   margin-left: -15px;
 }
-/* line 512, ../../app/stylesheets/screen.scss */
+/* line 522, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link {
   display: inline;
   float: left;
@@ -587,31 +604,31 @@ header nav a:hover {
   height: 58px;
   padding: 7px 18px 7px 13px;
 }
-/* line 518, ../../app/stylesheets/screen.scss */
+/* line 528, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link strong {
   font-weight: 900;
   display: block;
 }
-/* line 523, ../../app/stylesheets/screen.scss */
+/* line 533, ../../app/stylesheets/screen.scss */
 #container #phlog-list li .meta-link em {
   display: block;
   color: gray;
   font-size: 12px;
   margin-top: -2px;
 }
-/* line 534, ../../app/stylesheets/screen.scss */
+/* line 544, ../../app/stylesheets/screen.scss */
 #container #phlog-list li:hover .meta-link {
   background-color: #333333;
   color: #FFF;
 }
-/* line 545, ../../app/stylesheets/screen.scss */
+/* line 555, ../../app/stylesheets/screen.scss */
 #container #year-nav {
   background-color: #333333;
   overflow: hidden;
   *zoom: 1;
   padding-left: 10px;
 }
-/* line 550, ../../app/stylesheets/screen.scss */
+/* line 560, ../../app/stylesheets/screen.scss */
 #container #year-nav li {
   display: inline;
   float: left;
@@ -619,24 +636,24 @@ header nav a:hover {
   padding: 4px 15px;
   position: relative;
 }
-/* line 556, ../../app/stylesheets/screen.scss */
+/* line 566, ../../app/stylesheets/screen.scss */
 #container #year-nav li a {
   color: #999999;
 }
-/* line 562, ../../app/stylesheets/screen.scss */
+/* line 572, ../../app/stylesheets/screen.scss */
 #container #year-nav li.active a {
   color: #FFF;
 }
-/* line 572, ../../app/stylesheets/screen.scss */
+/* line 582, ../../app/stylesheets/screen.scss */
 #container #year-nav:last-child li {
   padding-top: 6px;
 }
-/* line 580, ../../app/stylesheets/screen.scss */
+/* line 590, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 584, ../../app/stylesheets/screen.scss */
+/* line 594, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav {
   background-color: #dddddd;
   width: 100%;
@@ -644,11 +661,11 @@ header nav a:hover {
   top: 0;
   left: 0;
 }
-/* line 591, ../../app/stylesheets/screen.scss */
+/* line 601, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav.active {
   display: block;
 }
-/* line 595, ../../app/stylesheets/screen.scss */
+/* line 605, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -662,35 +679,35 @@ header nav a:hover {
 #container #month-nav-holder .month-nav li {
   *display: inline;
 }
-/* line 600, ../../app/stylesheets/screen.scss */
+/* line 610, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li:first-child {
   padding-left: 25px;
 }
-/* line 606, ../../app/stylesheets/screen.scss */
+/* line 616, ../../app/stylesheets/screen.scss */
 #container #month-nav-holder .month-nav li.active a {
   color: #333333;
 }
-/* line 618, ../../app/stylesheets/screen.scss */
+/* line 628, ../../app/stylesheets/screen.scss */
 #container #post-nav {
   overflow: hidden;
   *zoom: 1;
   padding: 10px 20px;
 }
-/* line 622, ../../app/stylesheets/screen.scss */
+/* line 632, ../../app/stylesheets/screen.scss */
 #container #post-nav a {
   display: block;
   color: #aaaaaa;
 }
-/* line 626, ../../app/stylesheets/screen.scss */
+/* line 636, ../../app/stylesheets/screen.scss */
 #container #post-nav a:hover {
   color: #333333;
 }
-/* line 630, ../../app/stylesheets/screen.scss */
+/* line 640, ../../app/stylesheets/screen.scss */
 #container #post-nav a.prev-post-link {
   display: inline;
   float: left;
 }
-/* line 634, ../../app/stylesheets/screen.scss */
+/* line 644, ../../app/stylesheets/screen.scss */
 #container #post-nav a.next-post-link {
   display: inline;
   float: right;
